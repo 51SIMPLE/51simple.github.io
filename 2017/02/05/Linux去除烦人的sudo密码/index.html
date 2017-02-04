@@ -15,16 +15,31 @@
     <meta name="keywords" content="sudo密码," />
   
 
-  <meta name="description" content="执行sudo命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。">
+  <meta name="description" content="执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
+打开终端，执行 sudo visudo，找到这一行：
+%sudo  ALL=(ALL:ALL) ALL
+在行首添加 #，即注释掉此行，再往下添加一行：
+%sudo ALL=NOPASSWD:ALL
+保存修改之后，以后执行 sudo 命令就畅通无阻了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux去除烦人的sudo密码">
-<meta property="og:url" content="http://51simple.com/2017/02/04/linux-remove-sudo-password/index.html">
+<meta property="og:url" content="http://51simple.com/2017/02/05/Linux去除烦人的sudo密码/index.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="执行sudo命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。">
-<meta property="og:updated_time" content="2017-02-04T07:34:00.045Z">
+<meta property="og:description" content="执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
+打开终端，执行 sudo visudo，找到这一行：
+%sudo  ALL=(ALL:ALL) ALL
+在行首添加 #，即注释掉此行，再往下添加一行：
+%sudo ALL=NOPASSWD:ALL
+保存修改之后，以后执行 sudo 命令就畅通无阻了。">
+<meta property="og:updated_time" content="2017-02-04T16:43:36.490Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux去除烦人的sudo密码">
-<meta name="twitter:description" content="执行sudo命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。">
+<meta name="twitter:description" content="执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
+打开终端，执行 sudo visudo，找到这一行：
+%sudo  ALL=(ALL:ALL) ALL
+在行首添加 #，即注释掉此行，再往下添加一行：
+%sudo ALL=NOPASSWD:ALL
+保存修改之后，以后执行 sudo 命令就畅通无阻了。">
 
   
 
@@ -184,14 +199,14 @@
 
 
 <div class="content content-post CENTER">
-   <article id="post-linux-remove-sudo-password" class="article article-type-post" itemprop="blogPost">
+   <article id="post-Linux去除烦人的sudo密码" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">Linux去除烦人的sudo密码</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.02.04</span>
+        <span>2017.02.05</span>
       </span>
 
       
@@ -222,13 +237,12 @@
 
   <div class="article-content">
     
-      <p>执行sudo命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
-<a id="more"></a>
-<p>打开终端，执行<code>sudo visudo</code>，找到这一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
-<p>在行首添加<code>#</code>，即注释掉此行，再往下添加一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
-<p>保存修改之后，以后执行sudo命令就畅通无阻了。</p>
+      <p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
+<p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
+<pre><code>%sudo  ALL=(ALL:ALL) ALL
+</code></pre><p>在行首添加 <code>#</code>，即注释掉此行，再往下添加一行：</p>
+<pre><code>%sudo ALL=NOPASSWD:ALL
+</code></pre><p>保存修改之后，以后执行 sudo 命令就畅通无阻了。</p>
 
     
   </div>
@@ -259,10 +273,10 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="hide pull-left" href="/">
+    <a class="show pull-left" href="/2017/02/04/baidupcs/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/02/04/baidupcs/">
+    <a class="show pull-right" href="/2017/02/05/PotPlayer-免安装绿色版/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -284,7 +298,7 @@
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">关闭</span>
+      <span id="close" class="btn-close">Close</span>
     </div>
     <hr>
     <div class="modal-body">
@@ -382,8 +396,8 @@
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-linux-remove-sudo-password" 
-      data-title="Linux去除烦人的sudo密码" data-url="http://51simple.com/2017/02/04/linux-remove-sudo-password/index.html"></div>
+    <div class="ds-thread" data-thread-key="post-Linux去除烦人的sudo密码" 
+      data-title="Linux去除烦人的sudo密码" data-url="http://51simple.com/2017/02/05/Linux去除烦人的sudo密码/index.html"></div>
     <!-- 多说评论框 end -->
   </section>
 
