@@ -46,22 +46,21 @@
     <link href="http://51simple.com/2017/02/05/Linux%E5%8E%BB%E9%99%A4%E7%83%A6%E4%BA%BA%E7%9A%84sudo%E5%AF%86%E7%A0%81/"/>
     <id>http://51simple.com/2017/02/05/Linux去除烦人的sudo密码/</id>
     <published>2017-02-04T16:41:00.000Z</published>
-    <updated>2017-02-04T16:43:36.490Z</updated>
+    <updated>2017-02-04T17:23:30.274Z</updated>
     
     <content type="html"><![CDATA[<p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
 <p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
-<pre><code>%sudo  ALL=(ALL:ALL) ALL
-</code></pre><p>在行首添加 <code>#</code>，即注释掉此行，再往下添加一行：</p>
-<pre><code>%sudo ALL=NOPASSWD:ALL
-</code></pre><p>保存修改之后，以后执行 sudo 命令就畅通无阻了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
+<p>在行首添加 <code>#</code>，即注释掉此行，再往下添加一行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
+<p>保存修改之后，以后执行 sudo 命令就畅通无阻了。</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。&lt;/p&gt;
 &lt;p&gt;打开终端，执行 &lt;code&gt;sudo visudo&lt;/code&gt;，找到这一行：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;%sudo  ALL=(ALL:ALL) ALL
-&lt;/code&gt;&lt;/p
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
     
     </summary>
     
