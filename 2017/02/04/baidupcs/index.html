@@ -1,131 +1,331 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  
-  <title>BaiduPCS - 百度网盘命令行工具(不限速) | 51SIMPLE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <meta name="author" content="simple">
-  
-  
-    <meta name="description" content="BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在linux终端中使用。当然也支持Windows, Mac平台，关键在于不限速。">
-  
-  <meta name="description" content="BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在linux终端中使用。当然也支持Windows, Mac平台，关键在于不限速。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="BaiduPCS - 百度网盘命令行工具(不限速)">
-<meta property="og:url" content="http://51simple.com/2017/02/04/baidupcs/index.html">
-<meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在linux终端中使用。当然也支持Windows, Mac平台，关键在于不限速。">
-<meta property="og:updated_time" content="2017-02-04T10:54:19.499Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BaiduPCS - 百度网盘命令行工具(不限速)">
-<meta name="twitter:description" content="BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在linux终端中使用。当然也支持Windows, Mac平台，关键在于不限速。">
-  
-    <link rel="alternate" href="/atom.xml" title="51SIMPLE" type="application/atom+xml">
-  
-  
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="念念不忘，必有回响">
+    <meta name="keyword" content="undefined">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="51SIMPLE" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        BaiduPCS - 百度网盘命令行工具(不限速)｜undefined
+        
+    </title>
+
+    <link rel="canonical" href="http://51simple.com/2017/02/04/baidupcs/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 </head>
 
-<body>
-  <div class="wrapper">
-    <header id="header">
-  <div class="title">
-    <h1><a href="/">51SIMPLE</a></h1>
-    <p><a href="/">分享技术与优质资源</a></p>
-  </div>
-  <nav class="nav">
-    <ul>
-      
-        <li><a href="/">Home</a></li>
-      
-        <li><a href="/archives">Archives</a></li>
-      
-      
-        <li><a href="/atom.xml">RSS</a></li>
-      
-    </ul>
-    <div class="clearfix"></div>
-  </nav>
-  <div class="clearfix"></div>
-</header>
-    <div class="content"><article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2017/02/04/baidupcs/">
-  <time datetime="2017-02-04T09:22:00.000Z">
-    2017-02-04
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title">BaiduPCS - 百度网盘命令行工具(不限速)</h1>
-  
+<style>
 
-  </header>
-  
-  <div class="entry">
+    header.intro-header {
+        background-image: url('undefined')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    51SIMPLE
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
     
-      <p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在linux终端中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>BaiduPCS - 百度网盘命令行工具(不限速)</h1>
+                    
+                    <span class="meta">
+                         作者 simple
+                        <span>
+                          日期 2017-02-04
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#百度云不限速"
+                           title="百度云不限速">百度云不限速</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            BaiduPCS - 百度网盘命令行工具(不限速)
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在linux终端中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
 <a id="more"></a>
 <p>简单介绍一下windows下的使用方法：<br>1、下载 <a href="http://pan.baidu.com/s/1miFe1r6" target="_blank" rel="external">pcs.exe</a>，并移到到个人用户目录下（如 C:\用户\Simple）<br>2、按Win+r快捷键，输入cmd回车，即可打开命令窗口<br>3、执行 <code>pcs set --max_thread=3</code>设置最大下载线程数<br>4、执行 <code>pcs login --username=gang --password=&quot;password&quot;</code> ，对应自己的帐号密码进行登陆<br>5、之后就是一些操作文件的命令，详情见作者<a href="https://github.com/GangZhuo/BaiduPCS/blob/master/README.md#命令列表&quot;" target="_blank" rel="external">github主页</a></p>
 <p>提示：把 pcs.exe 所在目录加入到系统的环境变量（Path）中会更方便，这样不管当前目录是什么，都能使用 pcs 命令。</p>
 
-    
-  </div>
-  <footer>
-    
-      
-  <div class="categories">
-    <a class="categories-link" href="/categories/Tutorial/">Tutorial</a>
-  </div>
+                <hr>
+                
 
-      
-  <div class="tags">
-    <a class="tags-link" href="/tags/百度云不限速/">百度云不限速</a>
-  </div>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/02/04/potplayer-green-version-md/" data-toggle="tooltip" data-placement="top"
+                           title="PotPlayer 免安装绿色版.md">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/02/04/linux-remove-sudo-password/" data-toggle="tooltip" data-placement="top"
+                           title="Linux去除烦人的sudo密码">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
 
-    
-    <div class="clearfix"></div>
-  </footer>
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
 </article>
 
-</div>
-  </div>
-  <footer id="footer"><div class="copyright">
-  
-  &copy; 2017 <a href="/">simple</a>
-  
-</div>
-<div class="theme-copyright">
-  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
-   | 
-  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script src="/js/scale.fix.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
 
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox();
-  })(jQuery);
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 51SIMPLE 2017
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
 </script>
 
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://51simple.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','undefined','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="undefined">
 </body>
+
 </html>
