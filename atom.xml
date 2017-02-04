@@ -50,9 +50,9 @@
     
     <content type="html"><![CDATA[<p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
 <p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
 <p>在行首添加 <code>#</code>，即注释掉此行，再往下添加一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
 <p>保存修改之后，以后执行 sudo 命令就畅通无阻了。</p>
 ]]></content>
     

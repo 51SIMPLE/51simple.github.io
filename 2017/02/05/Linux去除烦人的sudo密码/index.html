@@ -17,9 +17,9 @@
 
   <meta name="description" content="执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
 打开终端，执行 sudo visudo，找到这一行：
-1%sudo  ALL=(ALL:ALL) ALL
+%sudo  ALL=(ALL:ALL) ALL
 在行首添加 #，即注释掉此行，再往下添加一行：
-1%sudo ALL=NOPASSWD:ALL
+%sudo ALL=NOPASSWD:ALL
 保存修改之后，以后执行 sudo 命令就畅通无阻了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux去除烦人的sudo密码">
@@ -27,18 +27,18 @@
 <meta property="og:site_name" content="51SIMPLE">
 <meta property="og:description" content="执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
 打开终端，执行 sudo visudo，找到这一行：
-1%sudo  ALL=(ALL:ALL) ALL
+%sudo  ALL=(ALL:ALL) ALL
 在行首添加 #，即注释掉此行，再往下添加一行：
-1%sudo ALL=NOPASSWD:ALL
+%sudo ALL=NOPASSWD:ALL
 保存修改之后，以后执行 sudo 命令就畅通无阻了。">
 <meta property="og:updated_time" content="2017-02-04T17:50:56.905Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux去除烦人的sudo密码">
 <meta name="twitter:description" content="执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
 打开终端，执行 sudo visudo，找到这一行：
-1%sudo  ALL=(ALL:ALL) ALL
+%sudo  ALL=(ALL:ALL) ALL
 在行首添加 #，即注释掉此行，再往下添加一行：
-1%sudo ALL=NOPASSWD:ALL
+%sudo ALL=NOPASSWD:ALL
 保存修改之后，以后执行 sudo 命令就畅通无阻了。">
 
   
@@ -239,9 +239,9 @@
     
       <p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
 <p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
 <p>在行首添加 <code>#</code>，即注释掉此行，再往下添加一行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
 <p>保存修改之后，以后执行 sudo 命令就畅通无阻了。</p>
 
     
