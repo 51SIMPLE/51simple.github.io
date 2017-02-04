@@ -73,11 +73,11 @@
   </entry>
   
   <entry>
-    <title>BaiduPCS - 百度网盘命令行工具(不限速)</title>
-    <link href="http://51simple.com/2017/02/04/baidupcs/"/>
-    <id>http://51simple.com/2017/02/04/baidupcs/</id>
+    <title>BaiduPCS - 百度网盘命令行工具</title>
+    <link href="http://51simple.com/2017/02/04/BaiduPCS%20-%20%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/"/>
+    <id>http://51simple.com/2017/02/04/BaiduPCS - 百度网盘命令行工具/</id>
     <published>2017-02-04T09:22:00.000Z</published>
-    <updated>2017-02-04T16:40:32.214Z</updated>
+    <updated>2017-02-04T17:12:28.763Z</updated>
     
     <content type="html"><![CDATA[<p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
 <a id="more"></a>
