@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>51SIMPLE</title>
-  <subtitle>分享技术与优质资源</subtitle>
+  <subtitle>崇尚简约，追求实用</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
@@ -9,7 +9,7 @@
   <id>http://51simple.com/</id>
   
   <author>
-    <name>simple</name>
+    <name>admin</name>
     
   </author>
   
