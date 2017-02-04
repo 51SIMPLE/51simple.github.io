@@ -14,5 +14,9 @@
 .article-content p {
   letter-spacing: 1px;
   font-size: 16px;
-  color: #333
+  color: #444
+}
+
+.content.content-post .article-header .article-meta {
+  font-size: 13px
 }
