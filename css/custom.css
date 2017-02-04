@@ -1,10 +1,12 @@
-code {
-padding: 1px 4px;
-    margin: 0 2px;
-    font-size: 90%;
-    border-radius: 3px;
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.06);
-    border: 1px solid #d7d0d2;
-    font-family: Monaco,Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
+@font-face {
+  font-family: "Meiryo";
+  src: url("/fonts/Meiryo.eot");
+  /* IE9 */
+  src: url("/fonts/Meiryo.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/Meiryo.woff") format("woff"), /* chrome, firefox */
+  url("/fonts/Meiryo.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("/fonts/Meiryo.svg#Meiryo") format("svg");
+  /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
 }
