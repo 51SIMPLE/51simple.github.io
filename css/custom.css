@@ -20,3 +20,7 @@
 .content.content-post .article-header .article-meta {
   font-size: 13px
 }
+
+.highlight pre {
+  font-family: Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
+}
