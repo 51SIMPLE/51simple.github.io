@@ -22,5 +22,13 @@
 }
 
 .highlight pre {
-      font-family: Manaco, Menlo,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+code {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+code:lang(zh){
+font-family: monospace, sans-serif;
 }
