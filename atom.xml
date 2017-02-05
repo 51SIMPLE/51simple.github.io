@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-04T18:54:09.577Z</updated>
+  <updated>2017-02-05T01:14:09.243Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -14,6 +14,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决eclipse中logcat只显示级别</title>
+    <link href="http://51simple.com/eclipse-logcat-show-level-only.html"/>
+    <id>http://51simple.com/eclipse-logcat-show-level-only.html</id>
+    <published>2017-02-05T01:02:00.000Z</published>
+    <updated>2017-02-05T01:14:09.243Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg" alt="eclipse-logcat-show-level-only"></p>
+<p>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
+<p>1、关闭eclipse</p>
+<p>2、在终端执行:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
+<p>3、用以下文本替换原有内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ddms.logcat.automonitor.userprompt=true  </div><div class="line">eclipse.preferences.version=1</div><div class="line">logcat.view.colsize.Application=169</div><div class="line">logcat.view.colsize.Level=54</div><div class="line">logcat.view.colsize.PID=54</div><div class="line">logcat.view.colsize.Tag=198</div><div class="line">logcat.view.colsize.Text=619</div><div class="line">logcat.view.colsize.Time=182</div></pre></td></tr></table></figure>
+<p>4、重新打开eclipse，logcat就能正常显示了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg&quot; alt=&quot;eclipse-logcat-show-level-only&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://51simple.com/categories/Linux/"/>
+    
+    
+      <category term="eclipse" scheme="http://51simple.com/tags/eclipse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10去除桌面快捷方式小箭头</title>
+    <link href="http://51simple.com/win10-remove-shoutcut-arrow.html"/>
+    <id>http://51simple.com/win10-remove-shoutcut-arrow.html</id>
+    <published>2017-02-05T00:54:00.000Z</published>
+    <updated>2017-02-05T01:01:29.883Z</updated>
+    
+    <content type="html"><![CDATA[<p>在桌面新建一个文本文档，重命名为 <code>clearArrow.bat</code>，再编辑写入以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</div><div class="line">taskkill /f /im explorer.exe</div><div class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</div><div class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</div><div class="line">start explorer</div><div class="line">pause</div></pre></td></tr></table></figure>
+<p>保存之后，选中文件并右键，选择 <code>以管理员身份运行</code>，这样快捷方式小箭头便清除了。</p>
+<p>附件：<a href="https://pan.baidu.com/s/1ge2NkQJ" target="_blank" rel="external">clearArrow.bat</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在桌面新建一个文本文档，重命名为 &lt;code&gt;clearArrow.bat&lt;/code&gt;，再编辑写入以下内容：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;
+    
+    </summary>
+    
+      <category term="Windows" scheme="http://51simple.com/categories/Windows/"/>
+    
+    
+      <category term="快捷方式" scheme="http://51simple.com/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>PotPlayer 免安装绿色版</title>
