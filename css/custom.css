@@ -23,10 +23,12 @@
 
 .highlight pre {
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 code {
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+      font-family: Consolas,Monaco,"Andale Mono",monospace;
 }
 
 code:lang(zh){

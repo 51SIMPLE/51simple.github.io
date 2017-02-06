@@ -18,9 +18,9 @@
   <meta name="description" content="在 linux 下才会出现的问题，解决方法如下：
 1、关闭eclipse
 2、在终端执行:
-sudo nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
+nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
 3、用以下文本替换原有内容
-ddms.logcat.automonitor.user">
+ddms.logcat.automonitor.userpromp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决eclipse中logcat只显示级别">
 <meta property="og:url" content="http://51simple.com/eclipse-logcat-show-level-only.html">
@@ -28,19 +28,19 @@ ddms.logcat.automonitor.user">
 <meta property="og:description" content="在 linux 下才会出现的问题，解决方法如下：
 1、关闭eclipse
 2、在终端执行:
-sudo nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
+nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
 3、用以下文本替换原有内容
-ddms.logcat.automonitor.user">
+ddms.logcat.automonitor.userpromp">
 <meta property="og:image" content="http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg">
-<meta property="og:updated_time" content="2017-02-05T01:14:09.243Z">
+<meta property="og:updated_time" content="2017-02-05T08:54:39.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决eclipse中logcat只显示级别">
 <meta name="twitter:description" content="在 linux 下才会出现的问题，解决方法如下：
 1、关闭eclipse
 2、在终端执行:
-sudo nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
+nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
 3、用以下文本替换原有内容
-ddms.logcat.automonitor.user">
+ddms.logcat.automonitor.userpromp">
 <meta name="twitter:image" content="http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg">
 
   
@@ -243,7 +243,7 @@ ddms.logcat.automonitor.user">
 <p>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
 <p>1、关闭eclipse</p>
 <p>2、在终端执行:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
 <p>3、用以下文本替换原有内容</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ddms.logcat.automonitor.userprompt=true  </div><div class="line">eclipse.preferences.version=1</div><div class="line">logcat.view.colsize.Application=169</div><div class="line">logcat.view.colsize.Level=54</div><div class="line">logcat.view.colsize.PID=54</div><div class="line">logcat.view.colsize.Tag=198</div><div class="line">logcat.view.colsize.Text=619</div><div class="line">logcat.view.colsize.Time=182</div></pre></td></tr></table></figure>
 <p>4、重新打开eclipse，logcat就能正常显示了。</p>

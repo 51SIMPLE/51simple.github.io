@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-05T01:55:32.598Z</updated>
+  <updated>2017-02-06T02:56:00.438Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下thunder转ed2k</title>
+    <link href="http://51simple.com/linux-thunder-convert-to-ed2k.html"/>
+    <id>http://51simple.com/linux-thunder-convert-to-ed2k.html</id>
+    <published>2017-02-06T02:05:39.000Z</published>
+    <updated>2017-02-06T02:56:00.438Z</updated>
+    
+    <content type="html"><![CDATA[<p>迅雷下载协议是经过加密的,直接在Linux下面是没有办法下载的。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">thunder://QUFlZDJrOi8vfGZpbGV8JUU4JUExJThDJUU1JUIwJUI4JUU4JUI1JUIwJUU4JTgyJTg5LlRoZS5XYWxraW5nLkRlYWQuUzA2RTAxLiVFNCVCOCVBRCVFOCU4QiVCMSVFNSVBRCU5NyVFNSVCOSU5NS5IRFRWcmlwLjEwMjR4NTc2Lm1wNHw2NDg3NTg1MDl8ZjIyZmI2OTRjMDQ0ZmYyNjU0MjhhNTEzNWVhYzhiOTB8aD12eXFsNHFjNHpmYmx0eWNqdW1rcnNibDJza2JscTJsZnwvWlo=</div></pre></td></tr></table></figure>
+<p>在终端下用 <code>echo url | base64 -d</code> 来解密，并显示地址:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="built_in">echo</span> QUFlZDJrOi8vfGZpbGV8JUU4JUExJThDJUU1JUIwJUI4JUU4JUI1JUIwJUU4JTgyJTg5LlRoZS5XYWxraW5nLkRlYWQuUzA2RTAxLiVFNCVCOCVBRCVFOCU4QiVCMSVFNSVBRCU5NyVFNSVCOSU5NS5IRFRWcmlwLjEwMjR4NTc2Lm1wNHw2NDg3NTg1MDl8ZjIyZmI2OTRjMDQ0ZmYyNjU0MjhhNTEzNWVhYzhiOTB8aD12eXFsNHFjNHpmYmx0eWNqdW1rcnNibDJza2JscTJsZnwvWlo= | base64 <span class="_">-d</span></div></pre></td></tr></table></figure>
+<p>显示结果是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">AAed2k://|file|%E8%A1%8C%E5%B0%B8%E8%B5%B0%E8%82%89.The.Walking.Dead.S06E01.%E4%B8%AD%E8%8B%B1%E5%AD%97%E5%B9%95.HDTVrip.1024x576.mp4|648758509|f22fb694c044ff265428a5135eac8b90|h=vyql4qc4zfbltycjumkrsbl2skblq2lf|/ZZ</div></pre></td></tr></table></figure>
+<p>所以解密后的地址是：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ed2k://|file|%E8%A1%8C%E5%B0%B8%E8%B5%B0%E8%82%89.The.Walking.Dead.S06E01.%E4%B8%AD%E8%8B%B1%E5%AD%97%E5%B9%95.HDTVrip.1024x576.mp4|648758509|f22fb694c044ff265428a5135eac8b90|h=vyql4qc4zfbltycjumkrsbl2skblq2lf|/</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;迅雷下载协议是经过加密的,直接在Linux下面是没有办法下载的。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;thunder://QUFlZDJ
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://51simple.com/categories/Linux/"/>
+    
+    
+      <category term="[object Object]" scheme="http://51simple.com/tags/object-Object/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux下轻量级启动器Albert</title>
@@ -90,13 +120,13 @@
     <link href="http://51simple.com/eclipse-logcat-show-level-only.html"/>
     <id>http://51simple.com/eclipse-logcat-show-level-only.html</id>
     <published>2017-02-05T01:02:00.000Z</published>
-    <updated>2017-02-05T01:14:09.243Z</updated>
+    <updated>2017-02-05T08:54:39.017Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg" alt="eclipse-logcat-show-level-only"></p>
 <p>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
 <p>1、关闭eclipse</p>
 <p>2、在终端执行:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
 <p>3、用以下文本替换原有内容</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ddms.logcat.automonitor.userprompt=true  </div><div class="line">eclipse.preferences.version=1</div><div class="line">logcat.view.colsize.Application=169</div><div class="line">logcat.view.colsize.Level=54</div><div class="line">logcat.view.colsize.PID=54</div><div class="line">logcat.view.colsize.Tag=198</div><div class="line">logcat.view.colsize.Text=619</div><div class="line">logcat.view.colsize.Time=182</div></pre></td></tr></table></figure>
 <p>4、重新打开eclipse，logcat就能正常显示了。</p>
