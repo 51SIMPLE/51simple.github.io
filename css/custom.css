@@ -11,6 +11,10 @@
   font-weight: normal;
 }
 
+body {
+  font: 14px "Microsoft YaHei",Helvetica,Arial,Lucida Grande,Tahoma,sans-serif;
+}
+
 .article-content p {
   letter-spacing: 1px;
   font-size: 16px;
