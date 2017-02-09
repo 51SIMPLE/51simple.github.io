@@ -21,6 +21,10 @@ body {
   color: #444
 }
 
+.article-content blockquote {
+  font-style: italic;
+}
+
 .content.content-post .article-header .article-meta {
   font-size: 13px
 }

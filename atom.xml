@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-08T05:07:23.044Z</updated>
+  <updated>2017-02-09T02:23:12.713Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>how to kick people out of your network</title>
+    <link href="http://51simple.com/how-to-kick-people-out-of-your-network.html"/>
+    <id>http://51simple.com/how-to-kick-people-out-of-your-network.html</id>
+    <published>2017-02-09T02:12:00.000Z</published>
+    <updated>2017-02-09T02:23:12.713Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ git clone https://github.com/k4m4/kickthemout.git</div><div class="line"></div><div class="line">$ cd kickthemout/</div><div class="line"></div><div class="line">$ sudo pip install -r requirements.txt</div></pre></td></tr></table></figure>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ python kickthemout.py</div></pre></td></tr></table></figure>
+<p><a href="https://asciinema.org/a/98200?autoplay=1&amp;loop=1" target="_blank" rel="external">视频演示</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://51simple.com/categories/Linux/"/>
+    
+    
+      <category term="kickthemout" scheme="http://51simple.com/tags/kickthemout/"/>
+    
+  </entry>
   
   <entry>
     <title>VirtualBox运行U盘中的操作系统</title>
