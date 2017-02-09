@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-09T04:02:03.573Z</updated>
+  <updated>2017-02-09T14:28:05.993Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://51simple.com/how-to-kick-people-out-of-your-network.html"/>
     <id>http://51simple.com/how-to-kick-people-out-of-your-network.html</id>
     <published>2017-02-09T02:12:00.000Z</published>
-    <updated>2017-02-09T04:02:03.573Z</updated>
+    <updated>2017-02-09T14:28:05.993Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.</p>
@@ -28,8 +28,8 @@
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ git clone https://github.com/k4m4/kickthemout.git</div><div class="line"></div><div class="line">$ cd kickthemout/</div><div class="line"></div><div class="line">$ sudo pip install -r requirements.txt</div></pre></td></tr></table></figure>
 <p>若提示 <code>Please install setuptools.</code>，则先执行:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo pip install -U setuptools</div></pre></td></tr></table></figure>
-<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo python kickthemout.py</div></pre></td></tr></table></figure>
-<p><a href="http://163.44.167.157/how%20to%20kick%20people%20out%20of%20your%20network.mp4" target="_blank" rel="external">视频演示</a></p>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo kickthemout</div></pre></td></tr></table></figure>
+<p><a href="https://pan.baidu.com/s/1eR57ImA" target="_blank" rel="external">视频演示</a></p>
 ]]></content>
     
     <summary type="html">
@@ -47,14 +47,14 @@
   </entry>
   
   <entry>
-    <title>VirtualBox运行U盘中的操作系统</title>
+    <title>virtualbox运行U盘中的操作系统</title>
     <link href="http://51simple.com/virtualbox-run-os-in-udisk.html"/>
     <id>http://51simple.com/virtualbox-run-os-in-udisk.html</id>
     <published>2017-02-08T04:38:14.000Z</published>
-    <updated>2017-02-09T03:03:05.195Z</updated>
+    <updated>2017-02-09T14:27:14.865Z</updated>
     
     <content type="html"><![CDATA[<p>插入U盘到电脑，<code>linux</code> 平台下执行：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo chmod o+rw /dev/sdb</div><div class="line">$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb</div></pre></td></tr></table></figure></p>
-<p>来个<a href="http://163.44.167.157/VirtualBox%E8%BF%90%E8%A1%8CU%E7%9B%98%E4%B8%AD%E7%9A%84%E7%B3%BB%E7%BB%9F.mp4" target="_blank" rel="external">视频演示</a></p>
+<p><a href="https://pan.baidu.com/s/1kULC5WN" target="_blank" rel="external">视频演示</a></p>
 <p>如果你是 <code>windows</code> 平台，命令有细微的差别：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">VBoxManage internalcommands createrawvmdk -filename F:\usb.vmdk -rawdisk \\.\PhysicalDrive2</div></pre></td></tr></table></figure>
 <p>具体请参考:<a href="http://jingyan.baidu.com/article/48a42057f511a8a924250403.html" target="_blank" rel="external">百度经验</a></p>
@@ -78,7 +78,7 @@
     <link href="http://51simple.com/crossover-install-qq-tm-2013.html"/>
     <id>http://51simple.com/crossover-install-qq-tm-2013.html</id>
     <published>2017-02-07T08:03:00.000Z</published>
-    <updated>2017-02-07T14:44:54.520Z</updated>
+    <updated>2017-02-09T14:27:36.573Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>CrossOver 是一款可以让我们直接在 Linux 上安装和运行 Windows 软件的工具。与 <code>wine</code> 的区别就在于它能自动解决 Windows 程序的“依赖”问题。</p>
@@ -86,7 +86,7 @@
 <p>1、首先到官网下载 <code>CrossOver</code> ，或 <a href="https://pan.baidu.com/s/1pLNgwxt" target="_blank" rel="external">点此下载</a>。</p>
 <p>2、之后安装，再替换 <a href="https://pan.baidu.com/s/1dELO9Cd" target="_blank" rel="external">winewrapper.exe.so</a> 即可破解：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo cp winewrapper.exe.so /opt/cxoffice/lib/wine</div></pre></td></tr></table></figure>
-<p>3、前往 <a href="http://im.qq.com/tm/2013/" target="_blank" rel="external">官网</a> 下载 <code>qq tm 2013</code>，安装过程见 <a href="http://163.44.167.157/CrossOver%20%E5%AE%89%E8%A3%85%20qq%20tm%202013.mp4" target="_blank" rel="external">视频教程</a>。</p>
+<p>3、前往 <a href="http://im.qq.com/tm/2013/" target="_blank" rel="external">官网</a> 下载 <code>qq tm 2013</code>，安装过程见 <a href="https://pan.baidu.com/s/1boCz1oF" target="_blank" rel="external">视频教程</a>。</p>
 <p>长期使用下来，个人感觉，这还算比较靠谱的qq版本，大部分功能都能使用，如记住密码，传输文件，发送表情，甚至远程桌面。当然，也难免有bug，有时通知栏qq图标会消失，或者有后台有进程残留，导致无法登陆，此时终端执行 <code>killall TM.exe</code> ，重新登陆即可。</p>
 ]]></content>
     
