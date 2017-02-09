@@ -74,11 +74,11 @@
   </entry>
   
   <entry>
-    <title>CrossOver破解并安装qq tm 2013</title>
+    <title>crossover破解并安装qq tm 2013</title>
     <link href="http://51simple.com/crossover-install-qq-tm-2013.html"/>
     <id>http://51simple.com/crossover-install-qq-tm-2013.html</id>
     <published>2017-02-07T08:03:00.000Z</published>
-    <updated>2017-02-09T14:27:36.573Z</updated>
+    <updated>2017-02-09T14:42:03.297Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>CrossOver 是一款可以让我们直接在 Linux 上安装和运行 Windows 软件的工具。与 <code>wine</code> 的区别就在于它能自动解决 Windows 程序的“依赖”问题。</p>
@@ -161,11 +161,11 @@
   </entry>
   
   <entry>
-    <title>Linux下thunder转ed2k</title>
+    <title>linux下thunder转ed2k</title>
     <link href="http://51simple.com/linux-thunder-convert-to-ed2k.html"/>
     <id>http://51simple.com/linux-thunder-convert-to-ed2k.html</id>
     <published>2017-02-06T02:05:39.000Z</published>
-    <updated>2017-02-06T02:56:00.438Z</updated>
+    <updated>2017-02-09T14:42:11.925Z</updated>
     
     <content type="html"><![CDATA[<p>迅雷下载协议是经过加密的,直接在Linux下面是没有办法下载的。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">thunder://QUFlZDJrOi8vfGZpbGV8JUU4JUExJThDJUU1JUIwJUI4JUU4JUI1JUIwJUU4JTgyJTg5LlRoZS5XYWxraW5nLkRlYWQuUzA2RTAxLiVFNCVCOCVBRCVFOCU4QiVCMSVFNSVBRCU5NyVFNSVCOSU5NS5IRFRWcmlwLjEwMjR4NTc2Lm1wNHw2NDg3NTg1MDl8ZjIyZmI2OTRjMDQ0ZmYyNjU0MjhhNTEzNWVhYzhiOTB8aD12eXFsNHFjNHpmYmx0eWNqdW1rcnNibDJza2JscTJsZnwvWlo=</div></pre></td></tr></table></figure>
@@ -191,11 +191,11 @@
   </entry>
   
   <entry>
-    <title>Linux下轻量级启动器Albert</title>
+    <title>linux下轻量级启动器Albert</title>
     <link href="http://51simple.com/linux-lightweight-launcher-albert.html"/>
     <id>http://51simple.com/linux-lightweight-launcher-albert.html</id>
     <published>2017-02-05T01:52:00.000Z</published>
-    <updated>2017-02-05T01:55:32.598Z</updated>
+    <updated>2017-02-09T14:42:18.605Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>Access everything with virtually zero effort. Run applications, open files or their paths, open bookmarks in your browser, search the web, calculate things and a lot more</p>
@@ -292,11 +292,11 @@
   </entry>
   
   <entry>
-    <title>Win10去除桌面快捷方式小箭头</title>
+    <title>win10去除桌面快捷方式小箭头</title>
     <link href="http://51simple.com/win10-remove-shoutcut-arrow.html"/>
     <id>http://51simple.com/win10-remove-shoutcut-arrow.html</id>
     <published>2017-02-05T00:54:00.000Z</published>
-    <updated>2017-02-05T01:01:29.883Z</updated>
+    <updated>2017-02-09T14:42:23.173Z</updated>
     
     <content type="html"><![CDATA[<p>在桌面新建一个文本文档，重命名为 <code>clearArrow.bat</code>，再编辑写入以下内容：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</div><div class="line">taskkill /f /im explorer.exe</div><div class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</div><div class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</div><div class="line">start explorer</div><div class="line">pause</div></pre></td></tr></table></figure>
@@ -319,11 +319,11 @@
   </entry>
   
   <entry>
-    <title>PotPlayer 免安装绿色版</title>
+    <title>potplayer 免安装绿色版</title>
     <link href="http://51simple.com/potplayer-green-version.html"/>
     <id>http://51simple.com/potplayer-green-version.html</id>
     <published>2017-02-04T16:44:00.000Z</published>
-    <updated>2017-02-04T18:54:09.577Z</updated>
+    <updated>2017-02-09T14:42:31.125Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/potplayer-cut.jpg" alt="potplayer"></p>
 <p>PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的文件格式。官网只有安装版，这里提供免安装的版本，点此下载</p>
@@ -345,11 +345,11 @@
   </entry>
   
   <entry>
-    <title>Linux去除烦人的sudo密码</title>
+    <title>linux去除烦人的sudo密码</title>
     <link href="http://51simple.com/linux-remove-sudo-password.html"/>
     <id>http://51simple.com/linux-remove-sudo-password.html</id>
     <published>2017-02-04T16:41:00.000Z</published>
-    <updated>2017-02-04T18:53:35.144Z</updated>
+    <updated>2017-02-09T14:42:37.613Z</updated>
     
     <content type="html"><![CDATA[<p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
 <p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
@@ -375,11 +375,11 @@
   </entry>
   
   <entry>
-    <title>BaiduPCS - 百度网盘命令行工具</title>
+    <title>baidupcs - 百度网盘命令行工具</title>
     <link href="http://51simple.com/baidupcs.html"/>
     <id>http://51simple.com/baidupcs.html</id>
     <published>2017-02-04T09:22:00.000Z</published>
-    <updated>2017-02-04T18:52:58.644Z</updated>
+    <updated>2017-02-09T14:42:44.565Z</updated>
     
     <content type="html"><![CDATA[<p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
 <a id="more"></a>
