@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-10T09:26:04.050Z</updated>
+  <updated>2017-02-10T09:41:03.595Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -20,13 +20,12 @@
     <link href="http://51simple.com/java-judge-leapyear.html"/>
     <id>http://51simple.com/java-judge-leapyear.html</id>
     <published>2017-02-10T09:12:33.000Z</published>
-    <updated>2017-02-10T09:26:04.050Z</updated>
+    <updated>2017-02-10T09:41:03.595Z</updated>
     
     <content type="html"><![CDATA[<p>判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，下列两种情况是闰年：</p>
 <p>① 普通年，能被4整除，且不能被100整除;<br>② 世纪年，能被100整除。</p>
 <p>Java判别方法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LeapYear</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">int</span> year = Integer.parseInt(args[<span class="number">0</span>]);</div><div class="line">		<span class="keyword">boolean</span> isLeapYear;</div><div class="line"></div><div class="line">		isLeapYear = (year % <span class="number">4</span> == <span class="number">0</span>) &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span>) || (year % <span class="number">100</span> ==<span class="number">0</span>);</div><div class="line"></div><div class="line">		System.out.println(isLeapYear);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LeapYear</span> </span>&#123;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">int</span> year = Integer.parseInt(args[<span class="number">0</span>]);</div><div class="line">		<span class="keyword">boolean</span> isLeapYear;</div><div class="line"></div><div class="line">		isLeapYear = (year % <span class="number">4</span> == <span class="number">0</span>) &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span>) || (year % <span class="number">100</span> ==<span class="number">0</span>);</div><div class="line"></div><div class="line">		System.out.println(isLeapYear);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
