@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-10T10:23:59.387Z</updated>
+  <updated>2017-02-10T10:31:08.476Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[已解决]/var/cache/apt/archives空间不足</title>
+    <link href="http://51simple.com/var-cache-apt-archives-dont-have-enough-space.html"/>
+    <id>http://51simple.com/var-cache-apt-archives-dont-have-enough-space.html</id>
+    <published>2017-02-10T10:27:10.000Z</published>
+    <updated>2017-02-10T10:31:08.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>清除所有已下载的过期安装包<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt-get autoclean</div></pre></td></tr></table></figure></p>
+<p>清除所有已下载的安装包<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt-get clean</div></pre></td></tr></table></figure></p>
+<p>在某个空间大的分区建立一个目录，然后把/var/cache/apt/archives换成指向那个目录的软链接<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">mkdir -p &quot;$HOME/debs/partial&quot;</div><div class="line">sudo rm -rf /var/cache/apt/archives</div><div class="line">sudo ln -s &quot;$HOME/debs&quot; /var/cache/apt/archives</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;清除所有已下载的过期安装包&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;sudo apt-get autoclean&lt;/div&gt;&lt;/pre&gt;&lt;/t
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://51simple.com/categories/Linux/"/>
+    
+    
+      <category term="空间不足" scheme="http://51simple.com/tags/%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>java判别闰年</title>
@@ -195,8 +220,8 @@
     <title>linux下thunder转ed2k</title>
     <link href="http://51simple.com/linux-thunder-convert-to-ed2k.html"/>
     <id>http://51simple.com/linux-thunder-convert-to-ed2k.html</id>
-    <published>2017-02-06T02:05:39.000Z</published>
-    <updated>2017-02-10T09:37:09.441Z</updated>
+    <published>2017-02-06T02:05:00.000Z</published>
+    <updated>2017-02-10T10:26:04.210Z</updated>
     
     <content type="html"><![CDATA[<p>迅雷下载协议是经过加密的,直接在Linux下面是没有办法下载的。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">thunder://QUFlZDJrOi8vfGZpbGV8JUU4JUExJThDJUU1JUIwJUI4JUU4JUI1JUIwJUU4JTgyJTg5LlRoZS5XYWxraW5nLkRlYWQuUzA2RTAxLiVFNCVCOCVBRCVFOCU4QiVCMSVFNSVBRCU5NyVFNSVCOSU5NS5IRFRWcmlwLjEwMjR4NTc2Lm1wNHw2NDg3NTg1MDl8ZjIyZmI2OTRjMDQ0ZmYyNjU0MjhhNTEzNWVhYzhiOTB8aD12eXFsNHFjNHpmYmx0eWNqdW1rcnNibDJza2JscTJsZnwvWlo=</div></pre></td></tr></table></figure>
