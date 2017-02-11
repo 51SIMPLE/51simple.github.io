@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-11T04:26:27.212Z</updated>
+  <updated>2017-02-11T11:38:50.164Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux mint 18.1安装配置conky</title>
+    <link href="http://51simple.com/linuxmint-18.1-configure-conky.html"/>
+    <id>http://51simple.com/linuxmint-18.1-configure-conky.html</id>
+    <published>2017-02-11T10:44:14.000Z</published>
+    <updated>2017-02-11T11:38:50.164Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/conky-demo.jpg" alt="conky-desktop.jpg"></p>
+<h2 id="安装Conky"><a href="#安装Conky" class="headerlink" title="安装Conky"></a>安装Conky</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-get install conky-all</div></pre></td></tr></table></figure>
+<h2 id="安装Conky-Manager"><a href="#安装Conky-Manager" class="headerlink" title="安装Conky Manager"></a>安装Conky Manager</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-add-repository -y ppa:teejee2008/ppa</div><div class="line">$ sudo apt-get update</div><div class="line">$ sudo apt-get install conky-manager</div></pre></td></tr></table></figure>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>下载自己喜欢的主题，解压至 <code>~/.conky</code> 目录，可以先试试默认的(效果图如上)：<br><img src="http://7xl7v5.com1.z0.glb.clouddn.com/conky-settings.jpg" alt="conky-settings.jpg"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://7xl7v5.com1.z0.glb.clouddn.com/conky-demo.jpg&quot; alt=&quot;conky-desktop.jpg&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装Conky&quot;&gt;&lt;a href=&quot;#安装Conky&quot; class=&quot;h
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://51simple.com/categories/Linux/"/>
+    
+    
+      <category term="conky" scheme="http://51simple.com/tags/conky/"/>
+    
+  </entry>
   
   <entry>
     <title>一条命令截取安卓屏幕至pc</title>
