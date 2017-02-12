@@ -47,19 +47,19 @@
     <link href="https://51simple.com/linuxmint-18.1-configure-conky.html"/>
     <id>https://51simple.com/linuxmint-18.1-configure-conky.html</id>
     <published>2017-02-11T10:44:14.000Z</published>
-    <updated>2017-02-12T03:02:33.202Z</updated>
+    <updated>2017-02-12T05:33:32.552Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装Conky"><a href="#安装Conky" class="headerlink" title="安装Conky"></a>安装Conky</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-get install conky-all</div></pre></td></tr></table></figure>
 <h2 id="安装Conky-Manager"><a href="#安装Conky-Manager" class="headerlink" title="安装Conky Manager"></a>安装Conky Manager</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-add-repository -y ppa:teejee2008/ppa</div><div class="line">$ sudo apt-get update</div><div class="line">$ sudo apt-get install conky-manager</div></pre></td></tr></table></figure>
 <h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>下载自己喜欢的主题，解压至 <code>~/.conky</code> 目录，可以先试试默认的：</p>
-<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/conky-settings.jpg" alt="conky-settings.jpg"></p>
+<p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmi9oufbj30kt0in7cn" alt="conky-settings.jpg"></p>
 <h2 id="出现的问题"><a href="#出现的问题" class="headerlink" title="出现的问题"></a>出现的问题</h2><p>中文显示成方框，是因为字体的原因：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano .conky/Gotham/Gotham</div></pre></td></tr></table></figure></p>
 <p>修改成自己系统已安装的中文字体：</p>
 <blockquote>
 <p>${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font <code>WenQuanYi Micro Hei Mono</code>:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font <code>WenQuanYi Micro Hei Mono</code>:pixelsize=58}${offset -148}${time %A}${font}<br>${voffset 1}${offset 12}${font Ubuntu:pixelsize=12}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%</p>
 </blockquote>
 <p>效果图：</p>
-<p><a href="http://7xl7v5.com1.z0.glb.clouddn.com/conky-desktop.jpg" alt="conky-desktop" title="conky-demo" target="_blank" rel="external"><img src="http://7xl7v5.com1.z0.glb.clouddn.com/conky-desktop.jpg"></a></p>
+<p><a href="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmjk6d60j311y0lcb29" alt="conky-desktop" title="conky-desktop" target="_blank" rel="external"><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmjk6d60j311y0lcb29"></a></p>
 ]]></content>
     
     <summary type="html">
@@ -418,10 +418,9 @@
     <link href="https://51simple.com/eclipse-logcat-show-level-only.html"/>
     <id>https://51simple.com/eclipse-logcat-show-level-only.html</id>
     <published>2017-02-05T01:02:00.000Z</published>
-    <updated>2017-02-05T08:54:39.017Z</updated>
+    <updated>2017-02-12T05:35:21.348Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg" alt="eclipse-logcat-show-level-only"></p>
-<p>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
+    <content type="html"><![CDATA[<p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmm53k94j30k40ga44q" alt="eclipse-logcat-show-level-only"><br>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
 <p>1、关闭eclipse</p>
 <p>2、在终端执行:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
@@ -432,8 +431,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://7xl7v5.com1.z0.glb.clouddn.com/eclipse-logcat-show-level-only.jpg&quot; alt=&quot;eclipse-logcat-show-level-only&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在 &lt;code&gt;
+      &lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmm53k94j30k40ga44q&quot; alt=&quot;eclipse-logcat-show-level-only&quot;&gt;&lt;br&gt;在 &lt;code&gt;linux&lt;/code&gt; 下才
     
     </summary>
     
@@ -476,17 +474,17 @@
     <link href="https://51simple.com/potplayer-green-version.html"/>
     <id>https://51simple.com/potplayer-green-version.html</id>
     <published>2017-02-04T16:44:00.000Z</published>
-    <updated>2017-02-09T14:42:31.125Z</updated>
+    <updated>2017-02-12T05:34:31.432Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/potplayer-cut.jpg" alt="potplayer"></p>
+    <content type="html"><![CDATA[<p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmlepdkhj30h70bqn4b" alt="potplayer"></p>
 <p>PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的文件格式。官网只有安装版，这里提供免安装的版本，点此下载</p>
 <p>下载之后，解压出一个 <code>PotPlayer</code> 文件夹，里面有个 <code>PotPlayerMini.exe</code>，选中它并右键，选择<code>发送到</code> -&gt;     <code>桌面快捷方式</code>。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://7xl7v5.com1.z0.glb.clouddn.com/potplayer-cut.jpg&quot; alt=&quot;potplayer&quot;&gt;&lt;/p&gt;
-&lt;p&gt;PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的文件格式。官
+      &lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmlepdkhj30h70bqn4b&quot; alt=&quot;potplayer&quot;&gt;&lt;/p&gt;
+&lt;p&gt;PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的
     
     </summary>
     
