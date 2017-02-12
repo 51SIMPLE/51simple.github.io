@@ -47,16 +47,16 @@
     <link href="http://51simple.com/linuxmint-18.1-configure-conky.html"/>
     <id>http://51simple.com/linuxmint-18.1-configure-conky.html</id>
     <published>2017-02-11T10:44:14.000Z</published>
-    <updated>2017-02-12T02:55:38.554Z</updated>
+    <updated>2017-02-12T03:02:33.202Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装Conky"><a href="#安装Conky" class="headerlink" title="安装Conky"></a>安装Conky</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-get install conky-all</div></pre></td></tr></table></figure>
 <h2 id="安装Conky-Manager"><a href="#安装Conky-Manager" class="headerlink" title="安装Conky Manager"></a>安装Conky Manager</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-add-repository -y ppa:teejee2008/ppa</div><div class="line">$ sudo apt-get update</div><div class="line">$ sudo apt-get install conky-manager</div></pre></td></tr></table></figure>
 <h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>下载自己喜欢的主题，解压至 <code>~/.conky</code> 目录，可以先试试默认的：</p>
 <p><img src="http://7xl7v5.com1.z0.glb.clouddn.com/conky-settings.jpg" alt="conky-settings.jpg"></p>
 <h2 id="出现的问题"><a href="#出现的问题" class="headerlink" title="出现的问题"></a>出现的问题</h2><p>中文显示成方框，是因为字体的原因：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano .conky/Gotham/Gotham</div></pre></td></tr></table></figure></p>
-<p>修改成自己系统已安装的字体：</p>
+<p>修改成自己系统已安装的中文字体：</p>
 <blockquote>
-<p>${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font <code>WenQuanYi Micro Hei</code>:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font <code>Microsoft YaHei</code>:pixelsize=58}${offset -148}${time %A}${font}<br>${voffset 1}${offset 12}${font Ubuntu:pixelsize=12}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%</p>
+<p>${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font <code>WenQuanYi Micro Hei Mono</code>:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font <code>WenQuanYi Micro Hei Mono</code>:pixelsize=58}${offset -148}${time %A}${font}<br>${voffset 1}${offset 12}${font Ubuntu:pixelsize=12}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%</p>
 </blockquote>
 <p>效果图：</p>
 <p><a href="http://7xl7v5.com1.z0.glb.clouddn.com/conky-desktop.jpg" alt="conky-desktop" title="conky-demo" target="_blank" rel="external"><img src="http://7xl7v5.com1.z0.glb.clouddn.com/conky-desktop.jpg"></a></p>
