@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://51simple.com/"/>
-  <updated>2017-02-11T13:12:53.994Z</updated>
+  <updated>2017-02-12T00:33:08.263Z</updated>
   <id>http://51simple.com/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>chromium调用uget下载</title>
+    <link href="http://51simple.com/chromium-call-uget.html"/>
+    <id>http://51simple.com/chromium-call-uget.html</id>
+    <published>2017-02-12T00:28:33.000Z</published>
+    <updated>2017-02-12T00:33:08.263Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装uget-chrome-wrapper"><a href="#安装uget-chrome-wrapper" class="headerlink" title="安装uget-chrome-wrapper"></a>安装uget-chrome-wrapper</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</div><div class="line">sudo apt update</div><div class="line">sudo apt install uget-chrome-wrapper</div></pre></td></tr></table></figure>
+<h2 id="安装uget"><a href="#安装uget" class="headerlink" title="安装uget"></a>安装uget</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo add-apt-repository ppa:plushuang-tw/uget-stable</div><div class="line">sudo apt update</div><div class="line">sudo apt install uget</div></pre></td></tr></table></figure>
+<h2 id="安装浏览器扩展"><a href="#安装浏览器扩展" class="headerlink" title="安装浏览器扩展"></a>安装浏览器扩展</h2><p><a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi" target="_blank" rel="external">uGet Integration</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装uget-chrome-wrapper&quot;&gt;&lt;a href=&quot;#安装uget-chrome-wrapper&quot; class=&quot;headerlink&quot; title=&quot;安装uget-chrome-wrapper&quot;&gt;&lt;/a&gt;安装uget-chrome-wrapper&lt;/
+    
+    </summary>
+    
+      <category term="Tutorial" scheme="http://51simple.com/categories/Tutorial/"/>
+    
+    
+      <category term="chromium" scheme="http://51simple.com/tags/chromium/"/>
+    
+      <category term="uget" scheme="http://51simple.com/tags/uget/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ppa:slgobinath/uget-chrome-wrapper</title>
+    <link href="http://51simple.com/ppa-slgobinath-uget-chrome-wrapper.html"/>
+    <id>http://51simple.com/ppa-slgobinath-uget-chrome-wrapper.html</id>
+    <published>2017-02-12T00:28:17.000Z</published>
+    <updated>2017-02-12T00:28:17.358Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>linux mint 18.1安装配置conky</title>
