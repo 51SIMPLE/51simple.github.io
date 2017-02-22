@@ -18,11 +18,8 @@
   <meta name="description" content="需要的工具：
 
 Linux Deploy
-
 JuiceSSH
-
 XServer XSDL
-
 
 
 Linux Deploy
@@ -32,7 +29,7 @@ Containerization method - chroot
 发行版版本 - kali rolling
 安装类型 - 文件
 安装路径 - ${EXTERNAL_STORAGE}/kali-armhf.img
-镜像大小">
+镜像大小 - 自">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux deploy安装kali linux并配置xfce4桌面">
 <meta property="og:url" content="https://51simple.com/linux-deploy-install-kali-and-configure-xfce4.html">
@@ -40,11 +37,8 @@ Containerization method - chroot
 <meta property="og:description" content="需要的工具：
 
 Linux Deploy
-
 JuiceSSH
-
 XServer XSDL
-
 
 
 Linux Deploy
@@ -54,18 +48,15 @@ Containerization method - chroot
 发行版版本 - kali rolling
 安装类型 - 文件
 安装路径 - ${EXTERNAL_STORAGE}/kali-armhf.img
-镜像大小">
-<meta property="og:updated_time" content="2017-02-22T01:19:00.696Z">
+镜像大小 - 自">
+<meta property="og:updated_time" content="2017-02-22T02:26:47.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux deploy安装kali linux并配置xfce4桌面">
 <meta name="twitter:description" content="需要的工具：
 
 Linux Deploy
-
 JuiceSSH
-
 XServer XSDL
-
 
 
 Linux Deploy
@@ -75,7 +66,7 @@ Containerization method - chroot
 发行版版本 - kali rolling
 安装类型 - 文件
 安装路径 - ${EXTERNAL_STORAGE}/kali-armhf.img
-镜像大小">
+镜像大小 - 自">
 
   
 
@@ -247,12 +238,9 @@ Containerization method - chroot
     
       <p>需要的工具：</p>
 <ol>
-<li><p>Linux Deploy</p>
-</li>
-<li><p>JuiceSSH</p>
-</li>
-<li><p>XServer XSDL</p>
-</li>
+<li>Linux Deploy</li>
+<li>JuiceSSH</li>
+<li>XServer XSDL</li>
 </ol>
 <hr>
 <h2 id="Linux-Deploy"><a href="#Linux-Deploy" class="headerlink" title="Linux Deploy"></a>Linux Deploy</h2><ul>
@@ -297,8 +285,8 @@ Containerization method - chroot
 <p>再到 <code>会话和启动</code> 中添加 fcitx 。</p>
 <p>5、安装 Chromium 和 PepperFlash</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano /etc/apt/sources.list</div><div class="line"></div><div class="line">添加以下源：</div><div class="line">deb http://dl.bintray.com/kusti8/chromium-rpi jessie main</div><div class="line">$ sudo apt update </div><div class="line">$ sudo apt install chromium-browser chromium-browser-l10n</div></pre></td></tr></table></figure>
-<p>下载 libpepflashplayer.so ，解压之后：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ chmod +x libpepflashplayer.so</div><div class="line">$ sudo mkdir /usr/lib/PepperFlash</div><div class="line">$ sudo cp libpepflashplayer.so /usr/lib/PepperFlash</div><div class="line">$ sudo chmod 777 /usr/lib/PepperFlash/libpepflashplayer.so</div></pre></td></tr></table></figure>
+<p>下载 <a href="PepperFlash.zip">https://pan.baidu.com/s/1mhZiwUc</a> ，解压之后：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$cd PepperFlash</div><div class="line">$ chmod +x *</div><div class="line">$ sudo cp *  /usr/lib/chromium/plugins</div><div class="line">$ sudo chmod 777  /usr/lib/chromium/plugins/libpepflashplayer.so</div><div class="line">$ sudo nano /etc/chromium/default</div><div class="line"></div><div class="line">最后一行改为：</div><div class="line">CHROMIUM_FLAGS=&quot;--ppapi-flash-path=/usr/lib/chromium/plugins/libpepflashplayer.so --ppapi-flash-version=12.0.0.77 -password-store=detect -user-data-dir audio-buffer-size=2048&quot;</div></pre></td></tr></table></figure>
 <p>浏览器地址栏访问: <code>chrome:plugins</code>，启用 Flash。</p>
 <blockquote>
 <p>总结，折腾这么一个系统，还是很值得的。arm版linux，相当于树莓派的功能。可用于手机端学习Linux系统，并且利用这个平台的一些工具，如 you-get（视频下载），baidupcs（不限速的百度云），ffmpeg（视频音频处理程序）……<br>还有你可以学习各种语言，Java，Python，C 等等。更多的方便之处，还需深入体会。</p>
