@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.com/"/>
-  <updated>2017-02-12T08:16:34.074Z</updated>
+  <updated>2017-02-22T01:19:00.696Z</updated>
   <id>https://51simple.com/</id>
   
   <author>
@@ -14,6 +14,100 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux deploy安装kali linux并配置xfce4桌面</title>
+    <link href="https://51simple.com/linux-deploy-install-kali-and-configure-xfce4.html"/>
+    <id>https://51simple.com/linux-deploy-install-kali-and-configure-xfce4.html</id>
+    <published>2017-02-14T08:26:00.000Z</published>
+    <updated>2017-02-22T01:19:00.696Z</updated>
+    
+    <content type="html"><![CDATA[<p>需要的工具：</p>
+<ol>
+<li><p>Linux Deploy</p>
+</li>
+<li><p>JuiceSSH</p>
+</li>
+<li><p>XServer XSDL</p>
+</li>
+</ol>
+<hr>
+<h2 id="Linux-Deploy"><a href="#Linux-Deploy" class="headerlink" title="Linux Deploy"></a>Linux Deploy</h2><ul>
+<li>Containerization method - chroot</li>
+<li>发行版 - Kail Linux</li>
+<li>架构 - armhf</li>
+<li>发行版版本 - kali rolling</li>
+<li>安装类型 - 文件</li>
+<li>安装路径 - ${EXTERNAL_STORAGE}/kali-armhf.img</li>
+<li>镜像大小 - 自动</li>
+<li>文件系统 - ext4</li>
+<li>用户名 - android</li>
+<li>用户密码 - a</li>
+<li>Privileged users - root</li>
+<li>本地化 - zh_CN.UTF-8</li>
+<li>允许挂载 Android 上的资源 - 选中</li>
+<li>挂载点 - ${EXTERNAL_STORAGE}</li>
+<li>允许 SSH 服务器启动 - 选中</li>
+<li>允许图形界面启动 - 选中</li>
+<li>图形子系统 - X11</li>
+<li>桌面环境 - Xfce</li>
+</ul>
+<hr>
+<h2 id="JuiceSSH"><a href="#JuiceSSH" class="headerlink" title="JuiceSSH"></a>JuiceSSH</h2><p>因为 Linux Deploy 已开启 SSH 服务器，我们便可以通过 JuiceSSH 去连接到它。然后就跟操作 vps 类似，只不过现在的 Linux 服务器是在安卓手机上，故连接它并不需要网络。</p>
+<blockquote>
+<p>地址：localhost<br>用户名：android<br>密码：a</p>
+</blockquote>
+<h2 id="XServer-XSDL"><a href="#XServer-XSDL" class="headerlink" title="XServer XSDL"></a>XServer XSDL</h2><p>打开之后，需要用 JuiceSSH 执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ <span class="built_in">export</span> DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4712</div><div class="line">$ startxfce4</div></pre></td></tr></table></figure>
+<p>此时，再切换到 XServer XSDL，便能进入图形界面。</p>
+<h2 id="Xfce4桌面配置"><a href="#Xfce4桌面配置" class="headerlink" title="Xfce4桌面配置"></a>Xfce4桌面配置</h2><p>1、修复终端 <code>Tab</code> 补全：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt install bash-completion</div><div class="line">$ sudo nano /etc/bash.bashrc</div></pre></td></tr></table></figure>
+<p>取消以下几行的注释：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># enable bash completion in interactive shells</span></div><div class="line"><span class="keyword">if</span> ! <span class="built_in">shopt</span> -oq posix; <span class="keyword">then</span></div><div class="line"> <span class="keyword">if</span> [ <span class="_">-f</span> /usr/share/bash-completion/bash_completion ]; <span class="keyword">then</span></div><div class="line">    . /usr/share/bash-completion/bash_completion</div><div class="line">  <span class="keyword">elif</span> [ <span class="_">-f</span> /etc/bash_completion ]; <span class="keyword">then</span></div><div class="line">    . /etc/bash_completion</div><div class="line">  <span class="keyword">fi</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
+<p>2、安装 <code>vncserver</code>，方便PC端远程：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt install tightvncserver</div></pre></td></tr></table></figure>
+<p>修改分辨率，根据自己电脑的情况：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano /usr/bin/vncserver</div></pre></td></tr></table></figure>
+<p>3、安装文泉驿等宽字体：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt install ttf-wqy-microhei</div></pre></td></tr></table></figure>    </p>
+<p>4、安装 fcitx 输入法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt install fcitx-table-wbpy</div><div class="line">$ sudo nano .profile</div><div class="line"></div><div class="line">末尾添加以下几行</div><div class="line">export GTK_IM_MODULE=fcitx</div><div class="line">export QT_IM_MODULE=fcitx</div><div class="line">export XMODIFIERS=@im=fcitx</div><div class="line"></div><div class="line">$ source .profile</div></pre></td></tr></table></figure>
+<p>再到 <code>会话和启动</code> 中添加 fcitx 。</p>
+<p>5、安装 Chromium 和 PepperFlash</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano /etc/apt/sources.list</div><div class="line"></div><div class="line">添加以下源：</div><div class="line">deb http://dl.bintray.com/kusti8/chromium-rpi jessie main</div><div class="line">$ sudo apt update </div><div class="line">$ sudo apt install chromium-browser chromium-browser-l10n</div></pre></td></tr></table></figure>
+<p>下载 libpepflashplayer.so ，解压之后：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ chmod +x libpepflashplayer.so</div><div class="line">$ sudo mkdir /usr/lib/PepperFlash</div><div class="line">$ sudo cp libpepflashplayer.so /usr/lib/PepperFlash</div><div class="line">$ sudo chmod 777 /usr/lib/PepperFlash/libpepflashplayer.so</div></pre></td></tr></table></figure>
+<p>浏览器地址栏访问: <code>chrome:plugins</code>，启用 Flash。</p>
+<blockquote>
+<p>总结，折腾这么一个系统，还是很值得的。arm版linux，相当于树莓派的功能。可用于手机端学习Linux系统，并且利用这个平台的一些工具，如 you-get（视频下载），baidupcs（不限速的百度云），ffmpeg（视频音频处理程序）……<br>还有你可以学习各种语言，Java，Python，C 等等。更多的方便之处，还需深入体会。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;需要的工具：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Linux Deploy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;JuiceSSH&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;XServer XSDL&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;Linux-Deploy&quot;&gt;&lt;a
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://51simple.com/categories/Linux/"/>
+    
+    
+      <category term="linux deploy" scheme="https://51simple.com/tags/linux-deploy/"/>
+    
+      <category term="xfce4" scheme="https://51simple.com/tags/xfce4/"/>
+    
+      <category term="安卓运行linux" scheme="https://51simple.com/tags/%E5%AE%89%E5%8D%93%E8%BF%90%E8%A1%8Clinux/"/>
+    
+  </entry>
   
   <entry>
     <title>chromium调用uget下载</title>
