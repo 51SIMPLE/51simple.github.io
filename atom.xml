@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.com/"/>
-  <updated>2017-02-22T02:58:39.698Z</updated>
+  <updated>2017-02-22T02:58:38.000Z</updated>
   <id>https://51simple.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://51simple.com/linux-deploy-install-kali-and-configure-xfce4.html"/>
     <id>https://51simple.com/linux-deploy-install-kali-and-configure-xfce4.html</id>
     <published>2017-02-14T08:26:00.000Z</published>
-    <updated>2017-02-22T02:58:39.698Z</updated>
+    <updated>2017-02-22T02:58:38.000Z</updated>
     
     <content type="html"><![CDATA[<p>手机端效果截图：<br><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcz28mk2soj30zk0k0wga" alt=""><br><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcz26vqowaj30zk0k040a" alt=""><br><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcz2afj5m0j30zk0k0di4" alt=""></p>
 <p>需要的工具：</p>
@@ -102,7 +102,7 @@
     <link href="https://51simple.com/chromium-call-uget.html"/>
     <id>https://51simple.com/chromium-call-uget.html</id>
     <published>2017-02-12T00:28:33.000Z</published>
-    <updated>2017-02-12T08:16:34.074Z</updated>
+    <updated>2017-02-12T08:16:34.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装uget-chrome-wrapper"><a href="#安装uget-chrome-wrapper" class="headerlink" title="安装uget-chrome-wrapper"></a>安装uget-chrome-wrapper</h2><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</div><div class="line">$ sudo apt update</div><div class="line">$ sudo apt install uget-chrome-wrapper</div></pre></td></tr></table></figure>
 <h2 id="安装uget"><a href="#安装uget" class="headerlink" title="安装uget"></a>安装uget</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo add-apt-repository ppa:plushuang-tw/uget-stable</div><div class="line">$ sudo apt update</div><div class="line">$ sudo apt install uget</div></pre></td></tr></table></figure>
@@ -129,7 +129,7 @@
     <link href="https://51simple.com/linuxmint-18.1-configure-conky.html"/>
     <id>https://51simple.com/linuxmint-18.1-configure-conky.html</id>
     <published>2017-02-11T10:44:14.000Z</published>
-    <updated>2017-02-12T05:33:32.552Z</updated>
+    <updated>2017-02-12T05:33:32.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装Conky"><a href="#安装Conky" class="headerlink" title="安装Conky"></a>安装Conky</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-get install conky-all</div></pre></td></tr></table></figure>
 <h2 id="安装Conky-Manager"><a href="#安装Conky-Manager" class="headerlink" title="安装Conky Manager"></a>安装Conky Manager</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt-add-repository -y ppa:teejee2008/ppa</div><div class="line">$ sudo apt-get update</div><div class="line">$ sudo apt-get install conky-manager</div></pre></td></tr></table></figure>
@@ -162,7 +162,7 @@
     <link href="https://51simple.com/a-comand-screencap-android.html"/>
     <id>https://51simple.com/a-comand-screencap-android.html</id>
     <published>2017-02-11T04:11:27.000Z</published>
-    <updated>2017-02-11T04:26:27.212Z</updated>
+    <updated>2017-02-11T04:26:26.000Z</updated>
     
     <content type="html"><![CDATA[<p>命令：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">adb shell screencap -p /sdcard/sc.png 或</div><div class="line">adb shell input keyevent 120</div></pre></td></tr></table></figure></p>
 <p>然后将 <code>png</code> 文件导出来电脑：</p>
@@ -195,7 +195,7 @@
     <link href="https://51simple.com/var-cache-apt-archives-dont-have-enough-space.html"/>
     <id>https://51simple.com/var-cache-apt-archives-dont-have-enough-space.html</id>
     <published>2017-02-10T10:27:10.000Z</published>
-    <updated>2017-02-10T10:31:08.476Z</updated>
+    <updated>2017-02-10T10:31:08.000Z</updated>
     
     <content type="html"><![CDATA[<p>清除所有已下载的过期安装包<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt-get autoclean</div></pre></td></tr></table></figure></p>
 <p>清除所有已下载的安装包<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt-get clean</div></pre></td></tr></table></figure></p>
@@ -220,7 +220,7 @@
     <link href="https://51simple.com/java-judge-leapyear.html"/>
     <id>https://51simple.com/java-judge-leapyear.html</id>
     <published>2017-02-10T09:12:33.000Z</published>
-    <updated>2017-02-11T04:30:10.465Z</updated>
+    <updated>2017-02-11T04:30:10.000Z</updated>
     
     <content type="html"><![CDATA[<p>判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：</p>
 <p>① 普通年，能被4整除，且不能被100整除;<br>② 世纪年，能被100整除。</p>
@@ -249,7 +249,7 @@
     <link href="https://51simple.com/how-to-kick-people-out-of-your-network.html"/>
     <id>https://51simple.com/how-to-kick-people-out-of-your-network.html</id>
     <published>2017-02-09T02:12:00.000Z</published>
-    <updated>2017-02-09T14:28:05.993Z</updated>
+    <updated>2017-02-09T14:28:04.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.</p>
@@ -280,7 +280,7 @@
     <link href="https://51simple.com/virtualbox-run-os-in-udisk.html"/>
     <id>https://51simple.com/virtualbox-run-os-in-udisk.html</id>
     <published>2017-02-08T04:38:14.000Z</published>
-    <updated>2017-02-09T14:27:14.865Z</updated>
+    <updated>2017-02-09T14:27:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>插入U盘到电脑，<code>linux</code> 平台下执行：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo chmod o+rw /dev/sdb</div><div class="line">$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb</div></pre></td></tr></table></figure></p>
 <p><a href="https://pan.baidu.com/s/1kULC5WN" target="_blank" rel="external">视频演示</a></p>
@@ -307,7 +307,7 @@
     <link href="https://51simple.com/crossover-install-qq-tm-2013.html"/>
     <id>https://51simple.com/crossover-install-qq-tm-2013.html</id>
     <published>2017-02-07T08:03:00.000Z</published>
-    <updated>2017-02-09T14:42:03.297Z</updated>
+    <updated>2017-02-09T14:42:02.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>CrossOver 是一款可以让我们直接在 Linux 上安装和运行 Windows 软件的工具。与 <code>wine</code> 的区别就在于它能自动解决 Windows 程序的“依赖”问题。</p>
@@ -342,7 +342,7 @@
     <link href="https://51simple.com/centos7-install-ffmpeg-quickly.html"/>
     <id>https://51simple.com/centos7-install-ffmpeg-quickly.html</id>
     <published>2017-02-06T13:57:01.000Z</published>
-    <updated>2017-02-10T09:37:46.673Z</updated>
+    <updated>2017-02-10T09:37:46.000Z</updated>
     
     <content type="html"><![CDATA[<p>新建一个脚本文件：<code>install-ffmpeg.sh</code>：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">yum install -y epel-release </div><div class="line">sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7</div><div class="line">yum repolist </div><div class="line">sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro </div><div class="line">sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm</div><div class="line">yum repolist </div><div class="line">yum update -y</div><div class="line">yum install -y ffmpeg</div></pre></td></tr></table></figure></p>
 <p>添加可执行权限：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">chmod +x install-ffmpeg.sh</div></pre></td></tr></table></figure></p>
@@ -369,7 +369,7 @@
     <link href="https://51simple.com/youtubedl-usage.html"/>
     <id>https://51simple.com/youtubedl-usage.html</id>
     <published>2017-02-06T13:07:20.000Z</published>
-    <updated>2017-02-12T08:17:58.082Z</updated>
+    <updated>2017-02-12T08:17:58.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装（linux）"><a href="#安装（linux）" class="headerlink" title="安装（linux）"></a>安装（<code>linux</code>）</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl</div><div class="line"></div><div class="line">sudo chmod a+rx /usr/local/bin/youtube-dl</div></pre></td></tr></table></figure>
 <h2 id="下载视频"><a href="#下载视频" class="headerlink" title="下载视频"></a>下载视频</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">youtubedl url-of-video-playing  </div></pre></td></tr></table></figure>
@@ -397,7 +397,7 @@
     <link href="https://51simple.com/linux-thunder-convert-to-ed2k.html"/>
     <id>https://51simple.com/linux-thunder-convert-to-ed2k.html</id>
     <published>2017-02-06T02:05:00.000Z</published>
-    <updated>2017-02-10T10:26:04.210Z</updated>
+    <updated>2017-02-10T10:26:04.000Z</updated>
     
     <content type="html"><![CDATA[<p>迅雷下载协议是经过加密的,直接在Linux下面是没有办法下载的。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">thunder://QUFlZDJrOi8vfGZpbGV8JUU4JUExJThDJUU1JUIwJUI4JUU4JUI1JUIwJUU4JTgyJTg5LlRoZS5XYWxraW5nLkRlYWQuUzA2RTAxLiVFNCVCOCVBRCVFOCU4QiVCMSVFNSVBRCU5NyVFNSVCOSU5NS5IRFRWcmlwLjEwMjR4NTc2Lm1wNHw2NDg3NTg1MDl8ZjIyZmI2OTRjMDQ0ZmYyNjU0MjhhNTEzNWVhYzhiOTB8aD12eXFsNHFjNHpmYmx0eWNqdW1rcnNibDJza2JscTJsZnwvWlo=</div></pre></td></tr></table></figure>
@@ -430,7 +430,7 @@
     <link href="https://51simple.com/linux-lightweight-launcher-albert.html"/>
     <id>https://51simple.com/linux-lightweight-launcher-albert.html</id>
     <published>2017-02-05T01:52:00.000Z</published>
-    <updated>2017-02-09T14:42:18.605Z</updated>
+    <updated>2017-02-09T14:42:18.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>Access everything with virtually zero effort. Run applications, open files or their paths, open bookmarks in your browser, search the web, calculate things and a lot more</p>
@@ -462,7 +462,7 @@
     <link href="https://51simple.com/ssh-login-server-no-password.html"/>
     <id>https://51simple.com/ssh-login-server-no-password.html</id>
     <published>2017-02-05T01:18:00.000Z</published>
-    <updated>2017-02-05T01:51:35.738Z</updated>
+    <updated>2017-02-05T01:51:34.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>vps服务器操作系统是Centos7，我的电脑是Linux Mint，实现原理是通过密钥文件免认证。</p>
@@ -500,7 +500,7 @@
     <link href="https://51simple.com/eclipse-logcat-show-level-only.html"/>
     <id>https://51simple.com/eclipse-logcat-show-level-only.html</id>
     <published>2017-02-05T01:02:00.000Z</published>
-    <updated>2017-02-12T05:35:21.348Z</updated>
+    <updated>2017-02-12T05:35:20.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmm53k94j30k40ga44q" alt="eclipse-logcat-show-level-only"><br>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
 <p>1、关闭eclipse</p>
@@ -529,7 +529,7 @@
     <link href="https://51simple.com/win10-remove-shoutcut-arrow.html"/>
     <id>https://51simple.com/win10-remove-shoutcut-arrow.html</id>
     <published>2017-02-05T00:54:00.000Z</published>
-    <updated>2017-02-09T14:42:23.173Z</updated>
+    <updated>2017-02-09T14:42:22.000Z</updated>
     
     <content type="html"><![CDATA[<p>在桌面新建一个文本文档，重命名为 <code>clearArrow.bat</code>，再编辑写入以下内容：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</div><div class="line">taskkill /f /im explorer.exe</div><div class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</div><div class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</div><div class="line">start explorer</div><div class="line">pause</div></pre></td></tr></table></figure>
@@ -556,7 +556,7 @@
     <link href="https://51simple.com/potplayer-green-version.html"/>
     <id>https://51simple.com/potplayer-green-version.html</id>
     <published>2017-02-04T16:44:00.000Z</published>
-    <updated>2017-02-12T05:34:31.432Z</updated>
+    <updated>2017-02-12T05:34:30.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmlepdkhj30h70bqn4b" alt="potplayer"></p>
 <p>PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的文件格式。官网只有安装版，这里提供免安装的版本，点此下载</p>
@@ -582,7 +582,7 @@
     <link href="https://51simple.com/linux-remove-sudo-password.html"/>
     <id>https://51simple.com/linux-remove-sudo-password.html</id>
     <published>2017-02-04T16:41:00.000Z</published>
-    <updated>2017-02-09T14:42:37.613Z</updated>
+    <updated>2017-02-09T14:42:36.000Z</updated>
     
     <content type="html"><![CDATA[<p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
 <p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
@@ -612,7 +612,7 @@
     <link href="https://51simple.com/baidupcs.html"/>
     <id>https://51simple.com/baidupcs.html</id>
     <published>2017-02-04T09:22:00.000Z</published>
-    <updated>2017-02-09T14:42:44.565Z</updated>
+    <updated>2017-02-09T14:42:44.000Z</updated>
     
     <content type="html"><![CDATA[<p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
 <a id="more"></a>
