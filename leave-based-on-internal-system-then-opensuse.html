@@ -15,22 +15,21 @@
     <meta name="keywords" content="openSUSE," />
   
 
-  <meta name="description" content="openSUSE
-接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
-我安装的是openSUSE Tumb">
+  <meta name="description" content="接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
+我安装的是openSUSE Tumbleweed，桌">
 <meta property="og:type" content="article">
 <meta property="og:title" content="告别基于内部错误系统(Linux Mint)，转投openSUSE">
 <meta property="og:url" content="https://51simple.com/leave-based-on-internal-system-then-opensuse.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="openSUSE
-接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
-我安装的是openSUSE Tumb">
-<meta property="og:updated_time" content="2017-02-27T14:05:29.967Z">
+<meta property="og:description" content="接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
+我安装的是openSUSE Tumbleweed，桌">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy">
+<meta property="og:updated_time" content="2017-02-28T02:36:12.949Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="告别基于内部错误系统(Linux Mint)，转投openSUSE">
-<meta name="twitter:description" content="openSUSE
-接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
-我安装的是openSUSE Tumb">
+<meta name="twitter:description" content="接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
+我安装的是openSUSE Tumbleweed，桌">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy">
 
   
 
@@ -160,6 +159,11 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、更换源"><span class="toc-text">1、更换源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、安装常用软件"><span class="toc-text">2、安装常用软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、搭建本地LAMP环境"><span class="toc-text">3、搭建本地LAMP环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装MySQL-MariaDB"><span class="toc-text">安装MySQL/MariaDB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装PHP"><span class="toc-text">安装PHP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装phpMyAdmin"><span class="toc-text">安装phpMyAdmin</span></a></li></ol></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
@@ -195,18 +199,19 @@
 
   <div class="article-content">
     
-      <p><a href="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy" target="_blank" rel="external">openSUSE</a></p>
+      <p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy" alt="openSUSE"></p>
 <p>接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的Linux<br>Mint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。</p>
 <p>我安装的是openSUSE Tumbleweed，桌面环境是Xfce，下面记录一些安装后要做的事情：</p>
-<p>1、更换源</p>
-<p>禁用原有软件源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper mr -da</div></pre></td></tr></table></figure><br>添加`packman’源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman</div></pre></td></tr></table></figure></p>
+<h2 id="1、更换源"><a href="#1、更换源" class="headerlink" title="1、更换源"></a>1、更换源</h2><p>禁用原有软件源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper mr -da</div></pre></td></tr></table></figure><br>添加packman源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman</div></pre></td></tr></table></figure></p>
 <p>手动刷新软件源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper ref</div></pre></td></tr></table></figure><br>更新系统</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper up</div></pre></td></tr></table></figure>
-<p>2、安装常用软件<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper install vlc vlc-codecs  // vlc播放器</div><div class="line">sudo zypper install chromium flash-player-ppapi // </div><div class="line">安装谷歌浏览器和Flash插件</div><div class="line">sudo apt install NetworkManager-pptp-gnome // 安装pptp(点对点隧道协议)</div><div class="line">sudo zypper install ffmpeg // 音视频处理程序</div><div class="line">sudo zypper python3-pip // Python包管理器</div><div class="line">sudo pip3 install you-get // 基于Python的下载工具</div><div class="line">sudo pip3 install shadowsocks // sock5轻量级代理</div><div class="line">sudo pip3 install npm4 // node包管理器</div><div class="line">sudo pip3 install -g hexo-cli // 安装hexo博客程序</div><div class="line">sudo zypper install proxychains   // 终端代理工具</div><div class="line">sudo nano /etc/proxychains.conf  // 注释最行一行，并添加一行：socks5 </div><div class="line">127.0.0.1 1080</div><div class="line">sudo zypper install tango-icon-theme // 安装tango图标主题</div><div class="line">网址：http://software.opensuse.org/search // 在线安装gtk2-theme-tango</div><div class="line">openSUSE下使用baidupcs(百度网盘命令行工具):</div><div class="line">sudo zypper install gcc make libcurl-devel libopenssl-devel</div><div class="line">git clone https://github.com/GangZhuo/BaiduPCS.git</div><div class="line">make clean</div><div class="line">make</div><div class="line">sudo make install</div></pre></td></tr></table></figure><br>2、搭建本地LAMP环境</p>
-<p>安装MySQL/MariaDB<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper in mariadb-tools mariadb mariadb-client // 安装MariaDB数据库</div><div class="line">sudo systemctl enable mysql // mysql开机自启</div><div class="line">sudo systemctl start mysql // 启动mysql</div><div class="line">mysqladmin -u root password 你的密码 // 设置数据库密码</div><div class="line">mysql -u root -p // 登陆mysql</div><div class="line">mysql_secure_installation // </div><div class="line">运行安全配置(输入root密码后，后续输n，接下来都是y回车)</div></pre></td></tr></table></figure><br>安装PHP<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper in php5 php5-bz2 php5-gd php5-mbstring php5-mcrypt </div><div class="line">php5-mysql php5-zip php5-zlib pwgen php5-gettext php5-pear php5-suhosin</div></pre></td></tr></table></figure><br>安装Apache<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper in apache2 apache2-mod_php5 apache2-doc yast2-http-server</div><div class="line">sudo systemctl enable apache2</div><div class="line">sudo systemctl start apache2</div></pre></td></tr></table></figure></p>
-<p>安装phpMyAdmin<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper install phpMyAdmin </div></pre></td></tr></table></figure><br>访问：<a href="http://localhost/phpMyAdmin" target="_blank" rel="external">http://localhost/phpMyAdmin</a><br>Access 403错误</p>
-<p>访问：<a href="http://localhost" target="_blank" rel="external">http://localhost</a> 时提示以上错误，解决方法：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano /etc/apache2/default-server.conf</div><div class="line">&lt;Directory &quot;/srv/www/htdocs&quot;&gt;</div><div class="line">&lt;/IfModule&gt;</div><div class="line">       &lt;IfModule mod_access_compat.c&gt;</div><div class="line">               Order allow,deny</div><div class="line">               Allow from all</div><div class="line">      &lt;/IfModule&gt;</div><div class="line">Require all granted  // 添加此行</div><div class="line">&lt;/Directory&gt;</div><div class="line">sudo systemctl restart apache2</div></pre></td></tr></table></figure>
+<h2 id="2、安装常用软件"><a href="#2、安装常用软件" class="headerlink" title="2、安装常用软件"></a>2、安装常用软件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper install vlc vlc-codecs  // vlc播放器</div><div class="line">sudo zypper install chromium flash-player-ppapi // </div><div class="line">安装谷歌浏览器和Flash插件</div><div class="line">sudo apt install NetworkManager-pptp-gnome // 安装pptp(点对点隧道协议)</div><div class="line">sudo zypper install ffmpeg // 音视频处理程序</div><div class="line">sudo zypper python3-pip // Python包管理器</div><div class="line">sudo pip3 install you-get // 基于Python的下载工具</div><div class="line">sudo pip3 install shadowsocks // sock5轻量级代理</div><div class="line">sudo pip3 install npm4 // node包管理器</div><div class="line">sudo pip3 install -g hexo-cli // 安装hexo博客程序</div><div class="line">sudo zypper install proxychains   // 终端代理工具</div><div class="line">sudo nano /etc/proxychains.conf  // 注释最行一行，并添加一行：socks5 </div><div class="line">127.0.0.1 1080</div><div class="line">sudo zypper install tango-icon-theme // 安装tango图标主题</div><div class="line">网址：http://software.opensuse.org/search // 在线安装gtk2-theme-tango</div><div class="line">openSUSE下使用baidupcs(百度网盘命令行工具):</div><div class="line">sudo zypper install gcc make libcurl-devel libopenssl-devel</div><div class="line">git clone https://github.com/GangZhuo/BaiduPCS.git</div><div class="line">make clean</div><div class="line">make</div><div class="line">sudo make install</div></pre></td></tr></table></figure>
+<h2 id="3、搭建本地LAMP环境"><a href="#3、搭建本地LAMP环境" class="headerlink" title="3、搭建本地LAMP环境"></a>3、搭建本地LAMP环境</h2><h3 id="安装MySQL-MariaDB"><a href="#安装MySQL-MariaDB" class="headerlink" title="安装MySQL/MariaDB"></a>安装MySQL/MariaDB</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper in mariadb-tools mariadb mariadb-client // 安装MariaDB数据库</div><div class="line">sudo systemctl enable mysql // mysql开机自启</div><div class="line">sudo systemctl start mysql // 启动mysql</div><div class="line">mysqladmin -u root password 你的密码 // 设置数据库密码</div><div class="line">mysql -u root -p // 登陆mysql</div><div class="line">mysql_secure_installation // </div><div class="line">运行安全配置(输入root密码后，后续输n，接下来都是y回车)</div></pre></td></tr></table></figure>
+<h3 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper in php5 php5-bz2 php5-gd php5-mbstring php5-mcrypt </div><div class="line">php5-mysql php5-zip php5-zlib pwgen php5-gettext php5-pear php5-suhosin</div></pre></td></tr></table></figure>
+<p>安装Apache<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper in apache2 apache2-mod_php5 apache2-doc yast2-http-server</div><div class="line">sudo systemctl enable apache2</div><div class="line">sudo systemctl start apache2</div></pre></td></tr></table></figure></p>
+<h3 id="安装phpMyAdmin"><a href="#安装phpMyAdmin" class="headerlink" title="安装phpMyAdmin"></a>安装phpMyAdmin</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper install phpMyAdmin </div></pre></td></tr></table></figure>
+<p>访问：<a href="http://localhost/phpMyAdmin" target="_blank" rel="external">http://localhost/phpMyAdmin</a></p>
+
     
 
   </div>
