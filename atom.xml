@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.com/"/>
-  <updated>2017-03-02T13:28:01.148Z</updated>
+  <updated>2017-03-02T15:12:52.440Z</updated>
   <id>https://51simple.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>byte b = (byte)130,求b</title>
+    <link href="https://51simple.com/int-convert-to-byte.html"/>
+    <id>https://51simple.com/int-convert-to-byte.html</id>
+    <published>2017-03-02T15:10:00.000Z</published>
+    <updated>2017-03-02T15:12:52.440Z</updated>
+    
+    <content type="html"><![CDATA[<p>数据130默认是int类型的十进制数据<br>第一步十进制的130转换成二进制数据<br>1 0 0 0 0 0 1 0<br>第二步130是int类型是占4个字节的，所以在内存的表现形式是<br>00000000  00000000  00000000  10000010<br>做了截取后的结果为<br>10000010<br>通过观察最高位符号位是1，这是一个负数，因为在计算机中所有的数据都是以补码的形式出现的所以要算它的补码<br>原码：1 0000010    原码变反码，最高位符号位不变，其他数值位1变0,0变1得反码<br>反码：1 1111101    反码变补码就是反码加1得<br>补码；1 1111110<br>最终的看到的结果就是<br>1     1111110最高为是符号位不运算，数值为转化为十进制是64+32+16+8+4+2=126符号位负<br>所以为-126</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;数据130默认是int类型的十进制数据&lt;br&gt;第一步十进制的130转换成二进制数据&lt;br&gt;1 0 0 0 0 0 1 0&lt;br&gt;第二步130是int类型是占4个字节的，所以在内存的表现形式是&lt;br&gt;00000000  00000000  00000000  10000010
+    
+    </summary>
+    
+      <category term="Java" scheme="https://51simple.com/categories/Java/"/>
+    
+    
+      <category term="易错" scheme="https://51simple.com/tags/%E6%98%93%E9%94%99/"/>
+    
+  </entry>
   
   <entry>
     <title>美国01节点Shadowsocks二维码</title>
@@ -627,35 +650,6 @@
     
     
       <category term="sudo密码" scheme="https://51simple.com/tags/sudo%E5%AF%86%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>baidupcs - 百度网盘命令行工具</title>
-    <link href="https://51simple.com/baidupcs.html"/>
-    <id>https://51simple.com/baidupcs.html</id>
-    <published>2017-02-04T09:22:00.000Z</published>
-    <updated>2017-02-09T14:42:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
-<a id="more"></a>
-<p>简单介绍一下windows下的使用方法：</p>
-<p>1、下载 <a href="http://pan.baidu.com/s/1miFe1r6" target="_blank" rel="external">pcs.exe</a>，并移到到个人用户目录下（如 C:\用户\Simple）<br>2、按Win+r快捷键，输入cmd回车，即可打开命令窗口<br>3、执行 <code>pcs set --max_thread=3</code>设置最大下载线程数<br>4、执行 <code>pcs login --username=gang --password=&quot;password&quot;</code> ，对应自己的帐号密码进行登陆<br>5、之后就是一些操作文件的命令，详情见作者<a href="https://github.com/GangZhuo/BaiduPCS/blob/master/README.md#命令列表&quot;" target="_blank" rel="external">github主页</a></p>
-<blockquote>
-<p>提示：把 pcs.exe 所在目录加入到系统的环境变量（Path）中会更方便，这样不管当前目录是什么，都能使用 pcs 命令。</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于&lt;code&gt;不限速&lt;/code&gt;。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Tutorial" scheme="https://51simple.com/categories/Tutorial/"/>
-    
-    
-      <category term="百度云不限速" scheme="https://51simple.com/tags/%E7%99%BE%E5%BA%A6%E4%BA%91%E4%B8%8D%E9%99%90%E9%80%9F/"/>
     
   </entry>
   
