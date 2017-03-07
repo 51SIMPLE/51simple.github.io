@@ -7,33 +7,41 @@
 <head>
   <meta charset="utf-8">
   
-  <title>virtualbox运行U盘中的操作系统 | 51SIMPLE</title>
+  <title>解决eclipse中logcat只显示级别 | 51SIMPLE</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="VirtualBox,U盘系统," />
+    <meta name="keywords" content="eclipse," />
   
 
-  <meta name="description" content="插入U盘到电脑，linux 平台下执行：$ sudo chmod o+rw /dev/sdb$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
-视频演示
-如果你是 windows 平台，命令有细微的差别：
-VBoxManage internalcommands createrawvmdk">
+  <meta name="description" content="在 linux 下才会出现的问题，解决方法如下：
+1、关闭eclipse
+2、在终端执行:
+nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
+3、用以下文本替换原有内容
+ddms.logcat.automonitor.userprompt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="virtualbox运行U盘中的操作系统">
-<meta property="og:url" content="https://51simple.com/virtualbox-run-os-in-udisk.html">
+<meta property="og:title" content="解决eclipse中logcat只显示级别">
+<meta property="og:url" content="https://51simple.github.io/Linuxeclipse-logcat-show-level-only.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="插入U盘到电脑，linux 平台下执行：$ sudo chmod o+rw /dev/sdb$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
-视频演示
-如果你是 windows 平台，命令有细微的差别：
-VBoxManage internalcommands createrawvmdk">
-<meta property="og:updated_time" content="2017-02-09T14:27:14.000Z">
+<meta property="og:description" content="在 linux 下才会出现的问题，解决方法如下：
+1、关闭eclipse
+2、在终端执行:
+nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
+3、用以下文本替换原有内容
+ddms.logcat.automonitor.userprompt">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmm53k94j30k40ga44q">
+<meta property="og:updated_time" content="2017-02-12T05:35:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="virtualbox运行U盘中的操作系统">
-<meta name="twitter:description" content="插入U盘到电脑，linux 平台下执行：$ sudo chmod o+rw /dev/sdb$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
-视频演示
-如果你是 windows 平台，命令有细微的差别：
-VBoxManage internalcommands createrawvmdk">
+<meta name="twitter:title" content="解决eclipse中logcat只显示级别">
+<meta name="twitter:description" content="在 linux 下才会出现的问题，解决方法如下：
+1、关闭eclipse
+2、在终端执行:
+nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
+3、用以下文本替换原有内容
+ddms.logcat.automonitor.userprompt">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmm53k94j30k40ga44q">
 
   
 
@@ -166,14 +174,14 @@ VBoxManage internalcommands createrawvmdk">
 
 
 <div class="content content-post CENTER">
-   <article id="post-virtualbox-run-os-in-udisk" class="article article-type-post" itemprop="blogPost">
+   <article id="post-eclipse-logcat-show-level-only" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">virtualbox运行U盘中的操作系统</h1>
+    <h1 class="post-title">解决eclipse中logcat只显示级别</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.02.08</span>
+        <span>2017.02.05</span>
       </span>
 
       
@@ -184,6 +192,11 @@ VBoxManage internalcommands createrawvmdk">
       	
 
       
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </span>
+
 
 
       
@@ -193,11 +206,13 @@ VBoxManage internalcommands createrawvmdk">
 
   <div class="article-content">
     
-      <p>插入U盘到电脑，<code>linux</code> 平台下执行：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo chmod o+rw /dev/sdb</div><div class="line">$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb</div></pre></td></tr></table></figure></p>
-<p><a href="https://pan.baidu.com/s/1kULC5WN" target="_blank" rel="external">视频演示</a></p>
-<p>如果你是 <code>windows</code> 平台，命令有细微的差别：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">VBoxManage internalcommands createrawvmdk -filename F:\usb.vmdk -rawdisk \\.\PhysicalDrive2</div></pre></td></tr></table></figure>
-<p>具体请参考:<a href="http://jingyan.baidu.com/article/48a42057f511a8a924250403.html" target="_blank" rel="external">百度经验</a></p>
+      <p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcnmm53k94j30k40ga44q" alt="eclipse-logcat-show-level-only"><br>在 <code>linux</code> 下才会出现的问题，解决方法如下：</p>
+<p>1、关闭eclipse</p>
+<p>2、在终端执行:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs</div></pre></td></tr></table></figure>
+<p>3、用以下文本替换原有内容</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">ddms.logcat.automonitor.userprompt=true  </div><div class="line">eclipse.preferences.version=1</div><div class="line">logcat.view.colsize.Application=169</div><div class="line">logcat.view.colsize.Level=54</div><div class="line">logcat.view.colsize.PID=54</div><div class="line">logcat.view.colsize.Tag=198</div><div class="line">logcat.view.colsize.Text=619</div><div class="line">logcat.view.colsize.Time=182</div></pre></td></tr></table></figure>
+<p>4、重新打开eclipse，logcat就能正常显示了。</p>
 
     
 
@@ -229,10 +244,10 @@ VBoxManage internalcommands createrawvmdk">
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/crossover-install-qq-tm-2013.html">
+    <a class="show pull-left" href="/Windowswin10-remove-shoutcut-arrow.html">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/how-to-kick-people-out-of-your-network.html">
+    <a class="show pull-right" href="/Linuxssh-login-server-no-password.html">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -254,7 +269,7 @@ VBoxManage internalcommands createrawvmdk">
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">Close</span>
+      <span id="close" class="btn-close">关闭</span>
     </div>
     <hr>
     <div class="modal-body">
@@ -352,8 +367,8 @@ VBoxManage internalcommands createrawvmdk">
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-virtualbox-run-os-in-udisk" 
-      data-title="virtualbox运行U盘中的操作系统" data-url="https://51simple.com/virtualbox-run-os-in-udisk.html"></div>
+    <div class="ds-thread" data-thread-key="post-eclipse-logcat-show-level-only" 
+      data-title="解决eclipse中logcat只显示级别" data-url="https://51simple.github.io/Linuxeclipse-logcat-show-level-only.html"></div>
     <!-- 多说评论框 end -->
   </section>
 
