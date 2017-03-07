@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.com/"/>
-  <updated>2017-03-02T15:12:52.440Z</updated>
+  <updated>2017-03-02T15:12:52.000Z</updated>
   <id>https://51simple.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://51simple.com/int-convert-to-byte.html"/>
     <id>https://51simple.com/int-convert-to-byte.html</id>
     <published>2017-03-02T15:10:00.000Z</published>
-    <updated>2017-03-02T15:12:52.440Z</updated>
+    <updated>2017-03-02T15:12:52.000Z</updated>
     
     <content type="html"><![CDATA[<p>数据130默认是int类型的十进制数据<br>第一步十进制的130转换成二进制数据<br>1 0 0 0 0 0 1 0<br>第二步130是int类型是占4个字节的，所以在内存的表现形式是<br>00000000  00000000  00000000  10000010<br>做了截取后的结果为<br>10000010<br>通过观察最高位符号位是1，这是一个负数，因为在计算机中所有的数据都是以补码的形式出现的所以要算它的补码<br>原码：1 0000010    原码变反码，最高位符号位不变，其他数值位1变0,0变1得反码<br>反码：1 1111101    反码变补码就是反码加1得<br>补码；1 1111110<br>最终的看到的结果就是<br>1     1111110最高为是符号位不运算，数值为转化为十进制是64+32+16+8+4+2=126符号位负<br>所以为-126</p>
 ]]></content>
@@ -43,7 +43,7 @@
     <link href="https://51simple.com/leave-based-on-internal-system-then-opensuse.html"/>
     <id>https://51simple.com/leave-based-on-internal-system-then-opensuse.html</id>
     <published>2017-02-27T13:56:00.000Z</published>
-    <updated>2017-02-28T13:40:13.043Z</updated>
+    <updated>2017-02-28T13:40:14.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy" alt="openSUSE"></p>
 <p>接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的Linux<br>Mint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。</p>
