@@ -7,29 +7,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Shadowsocks二维码 | 51SIMPLE</title>
+  <title>win10去除桌面快捷方式小箭头 | 51SIMPLE</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="安卓开发,Linux运维,Web开发,Windows" />
+    <meta name="keywords" content="快捷方式," />
   
 
-  <meta name="description" content="长按二维码，选择识别二维码，将解析出来的内容，导入影梭。
-日本01：">
+  <meta name="description" content="在桌面新建一个文本文档，重命名为 clearArrow.bat，再编辑写入以下内容：
+reg add &amp;quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&amp;quot; /v 29 /d &amp;quot;%systemroot%\system32\imageres.dll,197&amp;q">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Shadowsocks二维码">
-<meta property="og:url" content="https://51simple.github.io/uncategorizedus01.html">
+<meta property="og:title" content="win10去除桌面快捷方式小箭头">
+<meta property="og:url" content="https://51simple.github.io/Windows/win10-remove-shoutcut-arrow.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="长按二维码，选择识别二维码，将解析出来的内容，导入影梭。
-日本01：">
-<meta property="og:image" content="http://freess.org/images/servers/jp01.png">
-<meta property="og:updated_time" content="2017-03-03T09:52:28.000Z">
+<meta property="og:description" content="在桌面新建一个文本文档，重命名为 clearArrow.bat，再编辑写入以下内容：
+reg add &amp;quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&amp;quot; /v 29 /d &amp;quot;%systemroot%\system32\imageres.dll,197&amp;q">
+<meta property="og:updated_time" content="2017-02-09T14:42:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shadowsocks二维码">
-<meta name="twitter:description" content="长按二维码，选择识别二维码，将解析出来的内容，导入影梭。
-日本01：">
-<meta name="twitter:image" content="http://freess.org/images/servers/jp01.png">
+<meta name="twitter:title" content="win10去除桌面快捷方式小箭头">
+<meta name="twitter:description" content="在桌面新建一个文本文档，重命名为 clearArrow.bat，再编辑写入以下内容：
+reg add &amp;quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&amp;quot; /v 29 /d &amp;quot;%systemroot%\system32\imageres.dll,197&amp;q">
 
   
 
@@ -162,14 +160,14 @@
 
 
 <div class="content content-post CENTER">
-   <article id="post-us01" class="article article-type-post" itemprop="blogPost">
+   <article id="post-win10-remove-shoutcut-arrow" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">Shadowsocks二维码</h1>
+    <h1 class="post-title">win10去除桌面快捷方式小箭头</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.01.02</span>
+        <span>2017.02.05</span>
       </span>
 
       
@@ -180,6 +178,11 @@
       	
 
       
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Windows/">Windows</a>
+  </span>
+
 
 
       
@@ -189,8 +192,10 @@
 
   <div class="article-content">
     
-      <p>长按二维码，选择识别二维码，将解析出来的内容，导入影梭。</p>
-<p>日本01：<br><img src="http://freess.org/images/servers/jp01.png" alt="jp01.png"></p>
+      <p>在桌面新建一个文本文档，重命名为 <code>clearArrow.bat</code>，再编辑写入以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</div><div class="line">taskkill /f /im explorer.exe</div><div class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</div><div class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</div><div class="line">start explorer</div><div class="line">pause</div></pre></td></tr></table></figure>
+<p>保存之后，选中文件并右键，选择 <code>以管理员身份运行</code>，这样快捷方式小箭头便清除了。</p>
+<p>附件：<a href="https://pan.baidu.com/s/1ge2NkQJ" target="_blank" rel="external">clearArrow.bat</a></p>
 
     
 
@@ -222,10 +227,10 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="hide pull-left" href="/">
+    <a class="show pull-left" href="/Windows/potplayer-green-version.html">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/Tutorialbaidupcs.html">
+    <a class="show pull-right" href="/Linux/eclipse-logcat-show-level-only.html">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -345,8 +350,8 @@
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-us01" 
-      data-title="Shadowsocks二维码" data-url="https://51simple.github.io/uncategorizedus01.html"></div>
+    <div class="ds-thread" data-thread-key="post-win10-remove-shoutcut-arrow" 
+      data-title="win10去除桌面快捷方式小箭头" data-url="https://51simple.github.io/Windows/win10-remove-shoutcut-arrow.html"></div>
     <!-- 多说评论框 end -->
   </section>
 

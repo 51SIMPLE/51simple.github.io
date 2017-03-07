@@ -7,33 +7,39 @@
 <head>
   <meta charset="utf-8">
   
-  <title>java判别闰年 | 51SIMPLE</title>
+  <title>一条命令截取安卓屏幕至pc | 51SIMPLE</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="闰年," />
+    <meta name="keywords" content="安卓截屏," />
   
 
-  <meta name="description" content="判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：
-① 普通年，能被4整除，且不能被100整除;② 世纪年，能被100整除。
-Java判别方法：
-public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#123;		int year = Integer.parseInt(args[0]);		boo">
+  <meta name="description" content="命令：adb shell screencap -p /sdcard/sc.png 或adb shell input keyevent 120
+然后将 png 文件导出来电脑：
+adb push /sdcard/sc.png 
+直接一行命令截图并保存到电脑的方法：
+adb shell screencap -p | sed &amp;quot;s/\r$//&amp;quot; &amp;gt; sc.png
+为了方便使用，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java判别闰年">
-<meta property="og:url" content="https://51simple.github.io/Javajava-judge-leapyear.html">
+<meta property="og:title" content="一条命令截取安卓屏幕至pc">
+<meta property="og:url" content="https://51simple.github.io/Android/a-comand-screencap-android.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：
-① 普通年，能被4整除，且不能被100整除;② 世纪年，能被100整除。
-Java判别方法：
-public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#123;		int year = Integer.parseInt(args[0]);		boo">
-<meta property="og:updated_time" content="2017-02-11T04:30:10.000Z">
+<meta property="og:description" content="命令：adb shell screencap -p /sdcard/sc.png 或adb shell input keyevent 120
+然后将 png 文件导出来电脑：
+adb push /sdcard/sc.png 
+直接一行命令截图并保存到电脑的方法：
+adb shell screencap -p | sed &amp;quot;s/\r$//&amp;quot; &amp;gt; sc.png
+为了方便使用，">
+<meta property="og:updated_time" content="2017-02-11T04:26:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java判别闰年">
-<meta name="twitter:description" content="判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：
-① 普通年，能被4整除，且不能被100整除;② 世纪年，能被100整除。
-Java判别方法：
-public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#123;		int year = Integer.parseInt(args[0]);		boo">
+<meta name="twitter:title" content="一条命令截取安卓屏幕至pc">
+<meta name="twitter:description" content="命令：adb shell screencap -p /sdcard/sc.png 或adb shell input keyevent 120
+然后将 png 文件导出来电脑：
+adb push /sdcard/sc.png 
+直接一行命令截图并保存到电脑的方法：
+adb shell screencap -p | sed &amp;quot;s/\r$//&amp;quot; &amp;gt; sc.png
+为了方便使用，">
 
   
 
@@ -166,14 +172,14 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
 
 
 <div class="content content-post CENTER">
-   <article id="post-java-judge-leapyear" class="article article-type-post" itemprop="blogPost">
+   <article id="post-a-comand-screencap-android" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">java判别闰年</h1>
+    <h1 class="post-title">一条命令截取安卓屏幕至pc</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.02.10</span>
+        <span>2017.02.11</span>
       </span>
 
       
@@ -186,7 +192,7 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/Java/">Java</a>
+    <a class="article-category-link" href="/categories/Android/">Android</a>
   </span>
 
 
@@ -198,10 +204,17 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
 
   <div class="article-content">
     
-      <p>判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：</p>
-<p>① 普通年，能被4整除，且不能被100整除;<br>② 世纪年，能被100整除。</p>
-<p>Java判别方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LeapYear</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">int</span> year = Integer.parseInt(args[<span class="number">0</span>]);</div><div class="line">		<span class="keyword">boolean</span> isLeapYear;</div><div class="line">		isLeapYear = (year % <span class="number">4</span> == <span class="number">0</span>) &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span>) || (year % <span class="number">100</span> ==<span class="number">0</span>);</div><div class="line">		System.out.println(isLeapYear);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      <p>命令：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">adb shell screencap -p /sdcard/sc.png 或</div><div class="line">adb shell input keyevent 120</div></pre></td></tr></table></figure></p>
+<p>然后将 <code>png</code> 文件导出来电脑：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">adb push /sdcard/sc.png </div></pre></td></tr></table></figure>
+<p>直接一行命令截图并保存到电脑的方法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">adb shell screencap -p | sed &quot;s/\r$//&quot; &gt; sc.png</div></pre></td></tr></table></figure>
+<p>为了方便使用，我们在 <code>.bashrc</code> 文件中添加一个函数：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">nano .bashrc</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment">#for android screenshot</span></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">droidshot</span></span>() &#123;</div><div class="line">   adb shell screencap -p | sed <span class="string">"s/\r$//"</span> &gt; <span class="variable">$1</span>.png</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">source .bashrc</div></pre></td></tr></table></figure>
+<p>现在使用就简单多了：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">droidshot hello</div></pre></td></tr></table></figure></p>
+<p>命令执行之后，将会生成一个 <code>hello.png</code> 的文件。</p>
 
     
 
@@ -233,10 +246,10 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/Linuxhow-to-kick-people-out-of-your-network.html">
+    <a class="show pull-left" href="/Linux/var-cache-apt-archives-dont-have-enough-space.html">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/Linuxvar-cache-apt-archives-dont-have-enough-space.html">
+    <a class="show pull-right" href="/Linux/linuxmint-18.1-configure-conky.html">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -356,8 +369,8 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-java-judge-leapyear" 
-      data-title="java判别闰年" data-url="https://51simple.github.io/Javajava-judge-leapyear.html"></div>
+    <div class="ds-thread" data-thread-key="post-a-comand-screencap-android" 
+      data-title="一条命令截取安卓屏幕至pc" data-url="https://51simple.github.io/Android/a-comand-screencap-android.html"></div>
     <!-- 多说评论框 end -->
   </section>
 

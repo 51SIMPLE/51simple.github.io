@@ -17,8 +17,8 @@
   
   <entry>
     <title>byte b = (byte)130,求b</title>
-    <link href="https://51simple.github.io/Javaint-convert-to-byte.html"/>
-    <id>https://51simple.github.io/Javaint-convert-to-byte.html</id>
+    <link href="https://51simple.github.io/Java/int-convert-to-byte.html"/>
+    <id>https://51simple.github.io/Java/int-convert-to-byte.html</id>
     <published>2017-03-02T15:10:00.000Z</published>
     <updated>2017-03-02T15:12:52.000Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>告别基于内部错误系统(Linux Mint)，转投openSUSE</title>
-    <link href="https://51simple.github.io/Linuxleave-based-on-internal-system-then-opensuse.html"/>
-    <id>https://51simple.github.io/Linuxleave-based-on-internal-system-then-opensuse.html</id>
+    <link href="https://51simple.github.io/Linux/leave-based-on-internal-system-then-opensuse.html"/>
+    <id>https://51simple.github.io/Linux/leave-based-on-internal-system-then-opensuse.html</id>
     <published>2017-02-27T13:56:00.000Z</published>
     <updated>2017-02-28T13:40:14.000Z</updated>
     
@@ -75,8 +75,8 @@
   
   <entry>
     <title>linux deploy安装kali linux并配置xfce4桌面</title>
-    <link href="https://51simple.github.io/Linuxlinux-deploy-install-kali-and-configure-xfce4.html"/>
-    <id>https://51simple.github.io/Linuxlinux-deploy-install-kali-and-configure-xfce4.html</id>
+    <link href="https://51simple.github.io/Linux/linux-deploy-install-kali-and-configure-xfce4.html"/>
+    <id>https://51simple.github.io/Linux/linux-deploy-install-kali-and-configure-xfce4.html</id>
     <published>2017-02-14T08:26:00.000Z</published>
     <updated>2017-02-22T02:58:38.000Z</updated>
     
@@ -157,8 +157,8 @@
   
   <entry>
     <title>chromium调用uget下载</title>
-    <link href="https://51simple.github.io/Tutorialchromium-call-uget.html"/>
-    <id>https://51simple.github.io/Tutorialchromium-call-uget.html</id>
+    <link href="https://51simple.github.io/Tutorial/chromium-call-uget.html"/>
+    <id>https://51simple.github.io/Tutorial/chromium-call-uget.html</id>
     <published>2017-02-12T00:28:33.000Z</published>
     <updated>2017-02-12T08:16:34.000Z</updated>
     
@@ -184,8 +184,8 @@
   
   <entry>
     <title>linux mint 18.1安装配置conky</title>
-    <link href="https://51simple.github.io/Linuxlinuxmint-18.1-configure-conky.html"/>
-    <id>https://51simple.github.io/Linuxlinuxmint-18.1-configure-conky.html</id>
+    <link href="https://51simple.github.io/Linux/linuxmint-18.1-configure-conky.html"/>
+    <id>https://51simple.github.io/Linux/linuxmint-18.1-configure-conky.html</id>
     <published>2017-02-11T10:44:14.000Z</published>
     <updated>2017-02-12T05:33:32.000Z</updated>
     
@@ -217,8 +217,8 @@
   
   <entry>
     <title>一条命令截取安卓屏幕至pc</title>
-    <link href="https://51simple.github.io/Androida-comand-screencap-android.html"/>
-    <id>https://51simple.github.io/Androida-comand-screencap-android.html</id>
+    <link href="https://51simple.github.io/Android/a-comand-screencap-android.html"/>
+    <id>https://51simple.github.io/Android/a-comand-screencap-android.html</id>
     <published>2017-02-11T04:11:27.000Z</published>
     <updated>2017-02-11T04:26:26.000Z</updated>
     
@@ -250,8 +250,8 @@
   
   <entry>
     <title>[已解决]/var/cache/apt/archives空间不足</title>
-    <link href="https://51simple.github.io/Linuxvar-cache-apt-archives-dont-have-enough-space.html"/>
-    <id>https://51simple.github.io/Linuxvar-cache-apt-archives-dont-have-enough-space.html</id>
+    <link href="https://51simple.github.io/Linux/var-cache-apt-archives-dont-have-enough-space.html"/>
+    <id>https://51simple.github.io/Linux/var-cache-apt-archives-dont-have-enough-space.html</id>
     <published>2017-02-10T10:27:10.000Z</published>
     <updated>2017-02-10T10:31:08.000Z</updated>
     
@@ -275,8 +275,8 @@
   
   <entry>
     <title>java判别闰年</title>
-    <link href="https://51simple.github.io/Javajava-judge-leapyear.html"/>
-    <id>https://51simple.github.io/Javajava-judge-leapyear.html</id>
+    <link href="https://51simple.github.io/Java/java-judge-leapyear.html"/>
+    <id>https://51simple.github.io/Java/java-judge-leapyear.html</id>
     <published>2017-02-10T09:12:33.000Z</published>
     <updated>2017-02-11T04:30:10.000Z</updated>
     
@@ -304,8 +304,8 @@
   
   <entry>
     <title>how to kick people out of your network</title>
-    <link href="https://51simple.github.io/Linuxhow-to-kick-people-out-of-your-network.html"/>
-    <id>https://51simple.github.io/Linuxhow-to-kick-people-out-of-your-network.html</id>
+    <link href="https://51simple.github.io/Linux/how-to-kick-people-out-of-your-network.html"/>
+    <id>https://51simple.github.io/Linux/how-to-kick-people-out-of-your-network.html</id>
     <published>2017-02-09T02:12:00.000Z</published>
     <updated>2017-02-09T14:28:04.000Z</updated>
     
@@ -335,8 +335,8 @@
   
   <entry>
     <title>virtualbox运行U盘中的操作系统</title>
-    <link href="https://51simple.github.io/uncategorizedvirtualbox-run-os-in-udisk.html"/>
-    <id>https://51simple.github.io/uncategorizedvirtualbox-run-os-in-udisk.html</id>
+    <link href="https://51simple.github.io/uncategorized/virtualbox-run-os-in-udisk.html"/>
+    <id>https://51simple.github.io/uncategorized/virtualbox-run-os-in-udisk.html</id>
     <published>2017-02-08T04:38:14.000Z</published>
     <updated>2017-02-09T14:27:14.000Z</updated>
     
@@ -362,8 +362,8 @@
   
   <entry>
     <title>crossover破解并安装qq tm 2013</title>
-    <link href="https://51simple.github.io/Linuxcrossover-install-qq-tm-2013.html"/>
-    <id>https://51simple.github.io/Linuxcrossover-install-qq-tm-2013.html</id>
+    <link href="https://51simple.github.io/Linux/crossover-install-qq-tm-2013.html"/>
+    <id>https://51simple.github.io/Linux/crossover-install-qq-tm-2013.html</id>
     <published>2017-02-07T08:03:00.000Z</published>
     <updated>2017-02-09T14:42:02.000Z</updated>
     
@@ -397,8 +397,8 @@
   
   <entry>
     <title>centos7一键安装ffmpeg</title>
-    <link href="https://51simple.github.io/Linuxcentos7-install-ffmpeg-quickly.html"/>
-    <id>https://51simple.github.io/Linuxcentos7-install-ffmpeg-quickly.html</id>
+    <link href="https://51simple.github.io/Linux/centos7-install-ffmpeg-quickly.html"/>
+    <id>https://51simple.github.io/Linux/centos7-install-ffmpeg-quickly.html</id>
     <published>2017-02-06T13:57:01.000Z</published>
     <updated>2017-02-10T09:37:46.000Z</updated>
     
@@ -424,8 +424,8 @@
   
   <entry>
     <title>youtube-dl - 视频下载利器</title>
-    <link href="https://51simple.github.io/Linuxyoutubedl-usage.html"/>
-    <id>https://51simple.github.io/Linuxyoutubedl-usage.html</id>
+    <link href="https://51simple.github.io/Linux/youtubedl-usage.html"/>
+    <id>https://51simple.github.io/Linux/youtubedl-usage.html</id>
     <published>2017-02-06T13:07:20.000Z</published>
     <updated>2017-02-12T08:17:58.000Z</updated>
     
@@ -452,8 +452,8 @@
   
   <entry>
     <title>linux下thunder转ed2k</title>
-    <link href="https://51simple.github.io/Linuxlinux-thunder-convert-to-ed2k.html"/>
-    <id>https://51simple.github.io/Linuxlinux-thunder-convert-to-ed2k.html</id>
+    <link href="https://51simple.github.io/Linux/linux-thunder-convert-to-ed2k.html"/>
+    <id>https://51simple.github.io/Linux/linux-thunder-convert-to-ed2k.html</id>
     <published>2017-02-06T02:05:00.000Z</published>
     <updated>2017-02-10T10:26:04.000Z</updated>
     
@@ -485,8 +485,8 @@
   
   <entry>
     <title>ssh免密码登陆vps服务器</title>
-    <link href="https://51simple.github.io/Linuxssh-login-server-no-password.html"/>
-    <id>https://51simple.github.io/Linuxssh-login-server-no-password.html</id>
+    <link href="https://51simple.github.io/Linux/ssh-login-server-no-password.html"/>
+    <id>https://51simple.github.io/Linux/ssh-login-server-no-password.html</id>
     <published>2017-02-05T01:18:00.000Z</published>
     <updated>2017-02-05T01:51:34.000Z</updated>
     
@@ -523,8 +523,8 @@
   
   <entry>
     <title>解决eclipse中logcat只显示级别</title>
-    <link href="https://51simple.github.io/Linuxeclipse-logcat-show-level-only.html"/>
-    <id>https://51simple.github.io/Linuxeclipse-logcat-show-level-only.html</id>
+    <link href="https://51simple.github.io/Linux/eclipse-logcat-show-level-only.html"/>
+    <id>https://51simple.github.io/Linux/eclipse-logcat-show-level-only.html</id>
     <published>2017-02-05T01:02:00.000Z</published>
     <updated>2017-02-12T05:35:20.000Z</updated>
     
@@ -552,8 +552,8 @@
   
   <entry>
     <title>win10去除桌面快捷方式小箭头</title>
-    <link href="https://51simple.github.io/Windowswin10-remove-shoutcut-arrow.html"/>
-    <id>https://51simple.github.io/Windowswin10-remove-shoutcut-arrow.html</id>
+    <link href="https://51simple.github.io/Windows/win10-remove-shoutcut-arrow.html"/>
+    <id>https://51simple.github.io/Windows/win10-remove-shoutcut-arrow.html</id>
     <published>2017-02-05T00:54:00.000Z</published>
     <updated>2017-02-09T14:42:22.000Z</updated>
     
@@ -579,8 +579,8 @@
   
   <entry>
     <title>potplayer 免安装绿色版</title>
-    <link href="https://51simple.github.io/Windowspotplayer-green-version.html"/>
-    <id>https://51simple.github.io/Windowspotplayer-green-version.html</id>
+    <link href="https://51simple.github.io/Windows/potplayer-green-version.html"/>
+    <id>https://51simple.github.io/Windows/potplayer-green-version.html</id>
     <published>2017-02-04T16:44:00.000Z</published>
     <updated>2017-02-12T05:34:30.000Z</updated>
     
@@ -605,8 +605,8 @@
   
   <entry>
     <title>linux去除烦人的sudo密码</title>
-    <link href="https://51simple.github.io/Linuxlinux-remove-sudo-password.html"/>
-    <id>https://51simple.github.io/Linuxlinux-remove-sudo-password.html</id>
+    <link href="https://51simple.github.io/Linux/linux-remove-sudo-password.html"/>
+    <id>https://51simple.github.io/Linux/linux-remove-sudo-password.html</id>
     <published>2017-02-04T16:41:00.000Z</published>
     <updated>2017-02-09T14:42:36.000Z</updated>
     
@@ -635,8 +635,8 @@
   
   <entry>
     <title>baidupcs - 百度网盘命令行工具</title>
-    <link href="https://51simple.github.io/Tutorialbaidupcs.html"/>
-    <id>https://51simple.github.io/Tutorialbaidupcs.html</id>
+    <link href="https://51simple.github.io/Tutorial/baidupcs.html"/>
+    <id>https://51simple.github.io/Tutorial/baidupcs.html</id>
     <published>2017-02-04T09:22:00.000Z</published>
     <updated>2017-02-09T14:42:44.000Z</updated>
     

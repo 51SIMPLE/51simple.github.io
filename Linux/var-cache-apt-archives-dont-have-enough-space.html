@@ -7,33 +7,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>virtualbox运行U盘中的操作系统 | 51SIMPLE</title>
+  <title>[已解决]/var/cache/apt/archives空间不足 | 51SIMPLE</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="VirtualBox,U盘系统," />
+    <meta name="keywords" content="空间不足," />
   
 
-  <meta name="description" content="插入U盘到电脑，linux 平台下执行：$ sudo chmod o+rw /dev/sdb$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
-视频演示
-如果你是 windows 平台，命令有细微的差别：
-VBoxManage internalcommands createrawvmdk">
+  <meta name="description" content="清除所有已下载的过期安装包sudo apt-get autoclean
+清除所有已下载的安装包sudo apt-get clean
+在某个空间大的分区建立一个目录，然后把/var/cache/apt/archives换成指向那个目录的软链接mkdir -p &amp;quot;$HOME/debs/partial&amp;quot;sudo rm -rf /var/cache/apt/archivessudo l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="virtualbox运行U盘中的操作系统">
-<meta property="og:url" content="https://51simple.github.io/uncategorizedvirtualbox-run-os-in-udisk.html">
+<meta property="og:title" content="[已解决]/var/cache/apt/archives空间不足">
+<meta property="og:url" content="https://51simple.github.io/Linux/var-cache-apt-archives-dont-have-enough-space.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="插入U盘到电脑，linux 平台下执行：$ sudo chmod o+rw /dev/sdb$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
-视频演示
-如果你是 windows 平台，命令有细微的差别：
-VBoxManage internalcommands createrawvmdk">
-<meta property="og:updated_time" content="2017-02-09T14:27:14.000Z">
+<meta property="og:description" content="清除所有已下载的过期安装包sudo apt-get autoclean
+清除所有已下载的安装包sudo apt-get clean
+在某个空间大的分区建立一个目录，然后把/var/cache/apt/archives换成指向那个目录的软链接mkdir -p &amp;quot;$HOME/debs/partial&amp;quot;sudo rm -rf /var/cache/apt/archivessudo l">
+<meta property="og:updated_time" content="2017-02-10T10:31:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="virtualbox运行U盘中的操作系统">
-<meta name="twitter:description" content="插入U盘到电脑，linux 平台下执行：$ sudo chmod o+rw /dev/sdb$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
-视频演示
-如果你是 windows 平台，命令有细微的差别：
-VBoxManage internalcommands createrawvmdk">
+<meta name="twitter:title" content="[已解决]/var/cache/apt/archives空间不足">
+<meta name="twitter:description" content="清除所有已下载的过期安装包sudo apt-get autoclean
+清除所有已下载的安装包sudo apt-get clean
+在某个空间大的分区建立一个目录，然后把/var/cache/apt/archives换成指向那个目录的软链接mkdir -p &amp;quot;$HOME/debs/partial&amp;quot;sudo rm -rf /var/cache/apt/archivessudo l">
 
   
 
@@ -166,14 +163,14 @@ VBoxManage internalcommands createrawvmdk">
 
 
 <div class="content content-post CENTER">
-   <article id="post-virtualbox-run-os-in-udisk" class="article article-type-post" itemprop="blogPost">
+   <article id="post-var-cache-apt-archives-dont-have-enough-space" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">virtualbox运行U盘中的操作系统</h1>
+    <h1 class="post-title">[已解决]/var/cache/apt/archives空间不足</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.02.08</span>
+        <span>2017.02.10</span>
       </span>
 
       
@@ -184,6 +181,11 @@ VBoxManage internalcommands createrawvmdk">
       	
 
       
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </span>
+
 
 
       
@@ -193,11 +195,9 @@ VBoxManage internalcommands createrawvmdk">
 
   <div class="article-content">
     
-      <p>插入U盘到电脑，<code>linux</code> 平台下执行：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo chmod o+rw /dev/sdb</div><div class="line">$ vboxmanage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb</div></pre></td></tr></table></figure></p>
-<p><a href="https://pan.baidu.com/s/1kULC5WN" target="_blank" rel="external">视频演示</a></p>
-<p>如果你是 <code>windows</code> 平台，命令有细微的差别：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">VBoxManage internalcommands createrawvmdk -filename F:\usb.vmdk -rawdisk \\.\PhysicalDrive2</div></pre></td></tr></table></figure>
-<p>具体请参考:<a href="http://jingyan.baidu.com/article/48a42057f511a8a924250403.html" target="_blank" rel="external">百度经验</a></p>
+      <p>清除所有已下载的过期安装包<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt-get autoclean</div></pre></td></tr></table></figure></p>
+<p>清除所有已下载的安装包<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt-get clean</div></pre></td></tr></table></figure></p>
+<p>在某个空间大的分区建立一个目录，然后把/var/cache/apt/archives换成指向那个目录的软链接<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">mkdir -p &quot;$HOME/debs/partial&quot;</div><div class="line">sudo rm -rf /var/cache/apt/archives</div><div class="line">sudo ln -s &quot;$HOME/debs&quot; /var/cache/apt/archives</div></pre></td></tr></table></figure></p>
 
     
 
@@ -229,10 +229,10 @@ VBoxManage internalcommands createrawvmdk">
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/Linuxcrossover-install-qq-tm-2013.html">
+    <a class="show pull-left" href="/Java/java-judge-leapyear.html">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/Linuxhow-to-kick-people-out-of-your-network.html">
+    <a class="show pull-right" href="/Android/a-comand-screencap-android.html">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -352,8 +352,8 @@ VBoxManage internalcommands createrawvmdk">
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-virtualbox-run-os-in-udisk" 
-      data-title="virtualbox运行U盘中的操作系统" data-url="https://51simple.github.io/uncategorizedvirtualbox-run-os-in-udisk.html"></div>
+    <div class="ds-thread" data-thread-key="post-var-cache-apt-archives-dont-have-enough-space" 
+      data-title="[已解决]/var/cache/apt/archives空间不足" data-url="https://51simple.github.io/Linux/var-cache-apt-archives-dont-have-enough-space.html"></div>
     <!-- 多说评论框 end -->
   </section>
 
