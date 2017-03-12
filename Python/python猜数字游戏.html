@@ -7,24 +7,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>centos7一键安装ffmpeg | 51SIMPLE</title>
+  <title>python猜数字游戏 | 51SIMPLE</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="centos7,ffmpeg," />
+    <meta name="keywords" content="猜数字," />
   
 
-  <meta name="description" content="新建一个脚本文件：install-ffmpeg.sh：yum install -y epel-release sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7yum repolist sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro sudo rpm -Uv">
+  <meta name="description" content="guessNumber.pyfrom random import randintnum = randint(1, 100)bingo = Falseprint(&apos;Guess what i think?&apos;)while bingo == False:    answer = int(input())    if answer &amp;lt; num:        print(&apos;too small!&apos;)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="centos7一键安装ffmpeg">
-<meta property="og:url" content="https://51simple.github.io/Linux/centos7-install-ffmpeg-quickly.html">
+<meta property="og:title" content="python猜数字游戏">
+<meta property="og:url" content="https://51simple.github.io/Python/python猜数字游戏.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="新建一个脚本文件：install-ffmpeg.sh：yum install -y epel-release sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7yum repolist sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro sudo rpm -Uv">
-<meta property="og:updated_time" content="2017-02-10T09:37:46.000Z">
+<meta property="og:description" content="guessNumber.pyfrom random import randintnum = randint(1, 100)bingo = Falseprint(&apos;Guess what i think?&apos;)while bingo == False:    answer = int(input())    if answer &amp;lt; num:        print(&apos;too small!&apos;)">
+<meta property="og:updated_time" content="2017-03-12T12:54:36.022Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="centos7一键安装ffmpeg">
-<meta name="twitter:description" content="新建一个脚本文件：install-ffmpeg.sh：yum install -y epel-release sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7yum repolist sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro sudo rpm -Uv">
+<meta name="twitter:title" content="python猜数字游戏">
+<meta name="twitter:description" content="guessNumber.pyfrom random import randintnum = randint(1, 100)bingo = Falseprint(&apos;Guess what i think?&apos;)while bingo == False:    answer = int(input())    if answer &amp;lt; num:        print(&apos;too small!&apos;)">
 
   
 
@@ -154,17 +154,22 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#guessNumber-py"><span class="toc-text">guessNumber.py</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
-   <article id="post-centos7-install-ffmpeg-quickly" class="article article-type-post" itemprop="blogPost">
+   <article id="post-python猜数字游戏" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">centos7一键安装ffmpeg</h1>
+    <h1 class="post-title">python猜数字游戏</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.02.06</span>
+        <span>2017.03.12</span>
       </span>
 
       
@@ -177,7 +182,7 @@
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+    <a class="article-category-link" href="/categories/Python/">Python</a>
   </span>
 
 
@@ -189,10 +194,7 @@
 
   <div class="article-content">
     
-      <p>新建一个脚本文件：<code>install-ffmpeg.sh</code>：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">yum install -y epel-release </div><div class="line">sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7</div><div class="line">yum repolist </div><div class="line">sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro </div><div class="line">sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm</div><div class="line">yum repolist </div><div class="line">yum update -y</div><div class="line">yum install -y ffmpeg</div></pre></td></tr></table></figure></p>
-<p>添加可执行权限：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">chmod +x install-ffmpeg.sh</div></pre></td></tr></table></figure></p>
-<p>然后执行 <code>./install-ffmpeg.sh</code></p>
-
+      <h2 id="guessNumber-py"><a href="#guessNumber-py" class="headerlink" title="guessNumber.py"></a>guessNumber.py</h2><figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint</div><div class="line"></div><div class="line">num = randint(<span class="number">1</span>, <span class="number">100</span>)</div><div class="line">bingo = <span class="keyword">False</span></div><div class="line">print(<span class="string">'Guess what i think?'</span>)</div><div class="line"></div><div class="line"><span class="keyword">while</span> bingo == <span class="keyword">False</span>:</div><div class="line">    answer = int(input())</div><div class="line"></div><div class="line">    <span class="keyword">if</span> answer &lt; num:</div><div class="line">        print(<span class="string">'too small!'</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> answer &gt; num:</div><div class="line">        print(<span class="string">'too big!'</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> answer == num:</div><div class="line">        print(<span class="string">'bingo!'</span>)</div><div class="line">        bingo = <span class="keyword">True</span></div></pre></td></tr></table></figure>
     
 
   </div>
@@ -223,10 +225,10 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/Linux/youtubedl-usage.html">
+    <a class="show pull-left" href="/Java/int-convert-to-byte.html">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/Linux/crossover-install-qq-tm-2013.html">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -346,8 +348,8 @@
     
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-centos7-install-ffmpeg-quickly" 
-      data-title="centos7一键安装ffmpeg" data-url="https://51simple.github.io/Linux/centos7-install-ffmpeg-quickly.html"></div>
+    <div class="ds-thread" data-thread-key="post-python猜数字游戏" 
+      data-title="python猜数字游戏" data-url="https://51simple.github.io/Python/python猜数字游戏.html"></div>
     <!-- 多说评论框 end -->
   </section>
 
