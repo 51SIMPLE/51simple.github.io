@@ -158,6 +158,58 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-how-to-kick-people-out-of-your-network"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017年02月09日 10:12" datetime="2017-02-09T02:12:00.000Z"  itemprop="datePublished">2017-02-09</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+
+
+        
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/Linux/how-to-kick-people-out-of-your-network.html">how to kick people out of your network</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
+
+安装$ git clone...
+    
+
+        <a href="/Linux/how-to-kick-people-out-of-your-network.html" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kickthemout/">kickthemout</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-virtualbox-run-os-in-udisk"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -497,12 +549,17 @@ ssh-keygen -t rsa -P &apos;&apos;
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        在 linux 下才会出现的问题，解决方法如下：
+        
+                
+                    
+                    
+                
+                eclipse-logcat-show-level-only
+            
+在 linux 下才会出现的问题，解决方法如下：
 1、关闭eclipse
 2、在终端执行:
-nano ~/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.android.ide.eclipse.ddms.prefs
-3、用以下文本替换原有内容
-ddms.logcat.automonitor.userpro...
+nano ~/workspa...
     
 
         <a href="/Linux/eclipse-logcat-show-level-only.html" class="post-more waves-effect waves-button">
@@ -602,9 +659,14 @@ reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
 
     
         
+                
+                    
+                    
+                
+                potplayer
+            
 PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的文件格式。官网只有安装版，这里提供免安装的版本，点此下载
-下载之后，解压出一个 PotPlayer 文件夹，里面有个 PotPlayerMini.exe，选中它并右键，选择发送到 -&gt;     桌面快捷方式。
-
+下载之后，解压出一个 P...
     
 
         <a href="/Windows/potplayer-green-version.html" class="post-more waves-effect waves-button">
@@ -615,61 +677,6 @@ PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多�
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/免安装/">免安装</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-linux-remove-sudo-password"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017年02月05日 0:41" datetime="2017-02-04T16:41:00.000Z"  itemprop="datePublished">2017-02-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
-
-
-
-        
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/Linux/linux-remove-sudo-password.html">linux去除烦人的sudo密码</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
-打开终端，执行 sudo visudo，找到这一行：
-%sudo  ALL=(ALL:ALL) ALL
-在行首添加 #，即注释掉此行，再往下添加一行：
-%sudo ALL=NOPASSWD:ALL
-保存修改之后，以后执行 sudo 命令就畅通无阻了。
-
-    
-
-        <a href="/Linux/linux-remove-sudo-password.html" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sudo密码/">sudo密码</a></li></ul>
 
     </div>
     

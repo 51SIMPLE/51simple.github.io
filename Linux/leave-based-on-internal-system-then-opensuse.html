@@ -20,20 +20,23 @@
     
     
     <meta name="keywords" content="openSUSE">
-    <meta name="description" content="接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
-我安装的是openSUSE Tumbleweed，桌">
+    <meta name="description" content="openSUSE
+            
+接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出">
 <meta property="og:type" content="article">
 <meta property="og:title" content="告别基于内部错误系统(Linux Mint)，转投openSUSE">
 <meta property="og:url" content="https://51simple.github.io/Linux/leave-based-on-internal-system-then-opensuse.html">
 <meta property="og:site_name" content="51SIMPLE">
-<meta property="og:description" content="接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
-我安装的是openSUSE Tumbleweed，桌">
+<meta property="og:description" content="openSUSE
+            
+接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy">
 <meta property="og:updated_time" content="2017-02-28T13:40:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="告别基于内部错误系统(Linux Mint)，转投openSUSE">
-<meta name="twitter:description" content="接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。
-我安装的是openSUSE Tumbleweed，桌">
+<meta name="twitter:description" content="openSUSE
+            
+接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的LinuxMint，由于升级导致LAMP环境出">
 <meta name="twitter:image" content="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy">
     
         <link rel="alternative" href="/atom.xml" title="51SIMPLE" type="application/atom+xml">
@@ -198,7 +201,13 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy" alt="openSUSE"></p>
+            <figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fd2vhaqoq7j30p00dwmxy" alt="openSUSE" title="">
+                </div>
+                <div class="image-caption">openSUSE</div>
+            </figure>
 <p>接触Linux以来，一直是ubuntu或其衍生版作为主力系统。讲真这个系统非常适合新手，满足日常需求不在话下。最近一直在用的Linux<br>Mint，由于升级导致LAMP环境出现问题，尝试解决未果，索性更换系统。一直都想换一种包管理器，不再是apt那一套。权衡之下，选择了Linux最强大的发行版之一openSUSE，从安装到各种使用，发现都挺顺手。</p>
 <p>我安装的是openSUSE Tumbleweed，桌面环境是Xfce，下面记录一些安装后要做的事情：</p>
 <h2 id="1、更换源"><a href="#1、更换源" class="headerlink" title="1、更换源"></a>1、更换源</h2><p>禁用原有软件源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper mr -da</div></pre></td></tr></table></figure><br>添加packman源<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo zypper ar -f -n packman </div><div class="line">http://mirrors.aliyun.com/packman/openSUSE_Tumbleweed/ packman</div></pre></td></tr></table></figure></p>
