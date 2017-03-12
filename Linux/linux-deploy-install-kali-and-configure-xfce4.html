@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="崇尚简约，追求够用">
+    <meta name="keyword" content="undefined">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="51SIMPLE" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        linux deploy安装kali linux并配置xfce4桌面｜undefined
+        
+    </title>
+
+    <link rel="canonical" href="https://51simple.github.io/Linux/linux-deploy-install-kali-and-configure-xfce4.html">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('undefined')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    51SIMPLE
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>linux deploy安装kali linux并配置xfce4桌面</h1>
+                    
+                    <span class="meta">
+                         作者 admin
+                        <span>
+                          日期 2017-02-14
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#linux deploy"
+                           title="linux deploy">linux deploy</a>
+                        
+                        <a class="tag" href="/tags/#xfce4"
+                           title="xfce4">xfce4</a>
+                        
+                        <a class="tag" href="/tags/#安卓运行linux"
+                           title="安卓运行linux">安卓运行linux</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            linux deploy安装kali linux并配置xfce4桌面
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>手机端效果截图：<br><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcz28mk2soj30zk0k0wga" alt=""><br><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcz26vqowaj30zk0k040a" alt=""><br><img src="https://ws1.sinaimg.cn/large/005AaGtsgy1fcz2afj5m0j30zk0k0di4" alt=""></p>
+<p>需要的工具：</p>
+<ol>
+<li>Linux Deploy</li>
+<li>JuiceSSH</li>
+<li>XServer XSDL</li>
+</ol>
+<hr>
+<h2 id="Linux-Deploy"><a href="#Linux-Deploy" class="headerlink" title="Linux Deploy"></a>Linux Deploy</h2><ul>
+<li>Containerization method - chroot</li>
+<li>发行版 - Kail Linux</li>
+<li>架构 - armhf</li>
+<li>发行版版本 - kali rolling</li>
+<li>安装类型 - 文件</li>
+<li>安装路径 - ${EXTERNAL_STORAGE}/kali-armhf.img</li>
+<li>镜像大小 - 自动</li>
+<li>文件系统 - ext4</li>
+<li>用户名 - android</li>
+<li>用户密码 - a</li>
+<li>Privileged users - root</li>
+<li>本地化 - zh_CN.UTF-8</li>
+<li>允许挂载 Android 上的资源 - 选中</li>
+<li>挂载点 - ${EXTERNAL_STORAGE}</li>
+<li>允许 SSH 服务器启动 - 选中</li>
+<li>允许图形界面启动 - 选中</li>
+<li>图形子系统 - X11</li>
+<li>桌面环境 - Xfce</li>
+</ul>
+<hr>
+<h2 id="JuiceSSH"><a href="#JuiceSSH" class="headerlink" title="JuiceSSH"></a>JuiceSSH</h2><p>因为 Linux Deploy 已开启 SSH 服务器，我们便可以通过 JuiceSSH 去连接到它。然后就跟操作 vps 类似，只不过现在的 Linux 服务器是在安卓手机上，故连接它并不需要网络。</p>
+<blockquote>
+<p>地址：localhost<br>用户名：android<br>密码：a</p>
+</blockquote>
+<h2 id="XServer-XSDL"><a href="#XServer-XSDL" class="headerlink" title="XServer XSDL"></a>XServer XSDL</h2><p>打开之后，需要用 JuiceSSH 执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ <span class="built_in">export</span> DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4712</div><div class="line">$ startxfce4</div></pre></td></tr></table></figure>
+<p>此时，再切换到 XServer XSDL，便能进入图形界面。</p>
+<h2 id="Xfce4桌面配置"><a href="#Xfce4桌面配置" class="headerlink" title="Xfce4桌面配置"></a>Xfce4桌面配置</h2><p>1、修复终端 <code>Tab</code> 补全：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt install bash-completion</div><div class="line">$ sudo nano /etc/bash.bashrc</div></pre></td></tr></table></figure>
+<p>取消以下几行的注释：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># enable bash completion in interactive shells</span></div><div class="line"><span class="keyword">if</span> ! <span class="built_in">shopt</span> -oq posix; <span class="keyword">then</span></div><div class="line"> <span class="keyword">if</span> [ <span class="_">-f</span> /usr/share/bash-completion/bash_completion ]; <span class="keyword">then</span></div><div class="line">    . /usr/share/bash-completion/bash_completion</div><div class="line">  <span class="keyword">elif</span> [ <span class="_">-f</span> /etc/bash_completion ]; <span class="keyword">then</span></div><div class="line">    . /etc/bash_completion</div><div class="line">  <span class="keyword">fi</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
+<p>2、安装 <code>vncserver</code>，方便PC端远程：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt install tightvncserver</div></pre></td></tr></table></figure>
+<p>修改分辨率，根据自己电脑的情况：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano /usr/bin/vncserver</div></pre></td></tr></table></figure>
+<p>3、安装文泉驿等宽字体：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo apt install ttf-wqy-microhei</div></pre></td></tr></table></figure>    </p>
+<p>4、安装 fcitx 输入法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ sudo apt install fcitx-table-wbpy</div><div class="line">$ sudo nano .profile</div><div class="line"></div><div class="line">末尾添加以下几行</div><div class="line">export GTK_IM_MODULE=fcitx</div><div class="line">export QT_IM_MODULE=fcitx</div><div class="line">export XMODIFIERS=@im=fcitx</div><div class="line"></div><div class="line">$ source .profile</div></pre></td></tr></table></figure>
+<p>再到 <code>会话和启动</code> 中添加 fcitx 。</p>
+<p>5、安装 Chromium 和 PepperFlash</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo nano /etc/apt/sources.list</div><div class="line"></div><div class="line">添加以下源：</div><div class="line">deb http://dl.bintray.com/kusti8/chromium-rpi jessie main</div><div class="line">$ sudo apt update </div><div class="line">$ sudo apt install chromium-browser chromium-browser-l10n</div></pre></td></tr></table></figure>
+<p>下载 <a href="PepperFlash.zip">https://pan.baidu.com/s/1mhZiwUc</a> ，解压之后：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$cd PepperFlash</div><div class="line">$ chmod +x *</div><div class="line">$ sudo cp *  /usr/lib/chromium/plugins</div><div class="line">$ sudo chmod 777  /usr/lib/chromium/plugins/libpepflashplayer.so</div><div class="line">$ sudo nano /etc/chromium/default</div><div class="line"></div><div class="line">最后一行改为：</div><div class="line">CHROMIUM_FLAGS=&quot;--ppapi-flash-path=/usr/lib/chromium/plugins/libpepflashplayer.so --ppapi-flash-version=12.0.0.77 -password-store=detect -user-data-dir audio-buffer-size=2048&quot;</div></pre></td></tr></table></figure>
+<p>浏览器地址栏访问: <code>chrome:plugins</code>，启用 Flash。</p>
+<blockquote>
+<p>总结，折腾这么一个系统，还是很值得的。arm版linux，相当于树莓派的功能。可用于手机端学习Linux系统，并且利用这个平台的一些工具，如 you-get（视频下载），baidupcs（不限速的百度云），ffmpeg（视频音频处理程序）……<br>还有你可以学习各种语言，Java，Python，C 等等。更多的方便之处，还需深入体会。</p>
+</blockquote>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/Linux/leave-based-on-internal-system-then-opensuse.html" data-toggle="tooltip" data-placement="top"
+                           title="告别基于内部错误系统(Linux Mint)，转投openSUSE">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/Tutorial/chromium-call-uget.html" data-toggle="tooltip" data-placement="top"
+                           title="chromium调用uget下载">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-Deploy"><span class="toc-text">Linux Deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JuiceSSH"><span class="toc-text">JuiceSSH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XServer-XSDL"><span class="toc-text">XServer XSDL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Xfce4桌面配置"><span class="toc-text">Xfce4桌面配置</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 51SIMPLE 2017
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://51simple.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','undefined','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="undefined">
+</body>
+
+</html>
