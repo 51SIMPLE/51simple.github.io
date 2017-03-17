@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.github.io/"/>
-  <updated>2017-03-12T12:54:36.022Z</updated>
+  <updated>2017-03-17T13:07:33.505Z</updated>
   <id>https://51simple.github.io/</id>
   
   <author>
@@ -16,11 +16,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Manjaro install hexo</title>
+    <link href="https://51simple.github.io/Linux/Manjaro-install-hexo.html"/>
+    <id>https://51simple.github.io/Linux/Manjaro-install-hexo.html</id>
+    <published>2017-03-17T13:03:00.000Z</published>
+    <updated>2017-03-17T13:07:33.505Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.安装nvm（Node Version Manager）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash</div></pre></td></tr></table></figure>
+<p>之后重新打开终端</p>
+<p>2.安装nodejs和npm</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm stable</div></pre></td></tr></table></figure>
+<p>3.安装hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.安装nvm（Node Version Manager）&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://51simple.github.io/categories/Linux/"/>
+    
+    
+      <category term="hexo" scheme="https://51simple.github.io/tags/hexo/"/>
+    
+      <category term="Manjaro" scheme="https://51simple.github.io/tags/Manjaro/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python猜数字游戏</title>
     <link href="https://51simple.github.io/Python/python%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F.html"/>
     <id>https://51simple.github.io/Python/python猜数字游戏.html</id>
     <published>2017-03-12T12:46:00.000Z</published>
-    <updated>2017-03-12T12:54:36.022Z</updated>
+    <updated>2017-03-12T12:54:36.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="guessNumber-py"><a href="#guessNumber-py" class="headerlink" title="guessNumber.py"></a>guessNumber.py</h2><figure class="highlight python"><table><tr><td class="code"><pre><div class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint</div><div class="line"></div><div class="line">num = randint(<span class="number">1</span>, <span class="number">100</span>)</div><div class="line">bingo = <span class="keyword">False</span></div><div class="line">print(<span class="string">'Guess what i think?'</span>)</div><div class="line"></div><div class="line"><span class="keyword">while</span> bingo == <span class="keyword">False</span>:</div><div class="line">    answer = int(input())</div><div class="line"></div><div class="line">    <span class="keyword">if</span> answer &lt; num:</div><div class="line">        print(<span class="string">'too small!'</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> answer &gt; num:</div><div class="line">        print(<span class="string">'too big!'</span>)</div><div class="line"></div><div class="line">    <span class="keyword">if</span> answer == num:</div><div class="line">        print(<span class="string">'bingo!'</span>)</div><div class="line">        bingo = <span class="keyword">True</span></div></pre></td></tr></table></figure>]]></content>
     
@@ -675,36 +706,6 @@
     
     
       <category term="免安装" scheme="https://51simple.github.io/tags/%E5%85%8D%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux去除烦人的sudo密码</title>
-    <link href="https://51simple.github.io/Linux/linux-remove-sudo-password.html"/>
-    <id>https://51simple.github.io/Linux/linux-remove-sudo-password.html</id>
-    <published>2017-02-04T16:41:00.000Z</published>
-    <updated>2017-02-09T14:42:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。</p>
-<p>打开终端，执行 <code>sudo visudo</code>，找到这一行：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">%sudo  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
-<p>在行首添加 <code>#</code>，即注释掉此行，再往下添加一行：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">%sudo ALL=NOPASSWD:ALL</div></pre></td></tr></table></figure>
-<p>保存修改之后，以后执行 sudo 命令就畅通无阻了。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。&lt;/p&gt;
-&lt;p&gt;打开终端，执行 &lt;code&gt;sudo visudo&lt;/code&gt;，找到这一行：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://51simple.github.io/categories/Linux/"/>
-    
-    
-      <category term="sudo密码" scheme="https://51simple.github.io/tags/sudo%E5%AF%86%E7%A0%81/"/>
     
   </entry>
   
