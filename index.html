@@ -178,7 +178,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/Linux/Manjaro-install-hexo.html">Manjaro install hexo</a>
+      <a class="post-title-link" href="/Linux/Manjaro-install-hexo.html">Manjaro安装配置KDE桌面</a>
     </h3>
   
 
@@ -188,13 +188,11 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        1.安装nvm（Node Version Manager）
-1curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-之后重新打开终端
-2.安装nodejs和npm
-1nvm stable
-3.安装hexo
-1npm install -g hexo-cli
+        系统更新与升级1.排列源：1sudo pacman-mirrors -g
+2.然后同步：1sudo pacman-optimize&amp;&amp; sync
+3.升级系统：1sudo pacman -Syyu
+基本软件配置1.安装fcitx1sudo pacman -S fcitx fcitx-im
+2.安装Python3-pip12curl -O https://bootstrap.p...
     
 
         <a href="/Linux/Manjaro-install-hexo.html" class="post-more waves-effect waves-button">
