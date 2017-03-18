@@ -34,7 +34,7 @@
 3.升级系统：1sudo pacman -Syyu
 基本软件配置1.安装fcitx1sudo pacman -S fcitx fcitx-im
 2.安装Python3-pip12curl -O https://bootstrap.pypa">
-<meta property="og:updated_time" content="2017-03-18T06:35:50.119Z">
+<meta property="og:updated_time" content="2017-03-18T06:54:47.699Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Manjaro安装配置KDE桌面">
 <meta name="twitter:description" content="系统更新与升级1.排列源：1sudo pacman-mirrors -g
@@ -211,13 +211,14 @@
 <h2 id="基本软件配置"><a href="#基本软件配置" class="headerlink" title="基本软件配置"></a>基本软件配置</h2><p>1.安装fcitx<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S fcitx fcitx-im</div></pre></td></tr></table></figure></p>
 <p>2.安装Python3-pip<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">curl -O https://bootstrap.pypa.io/get-pip.py</div><div class="line">python3 get-pip.py</div></pre></td></tr></table></figure></p>
 <p>3.安装Virtualbox<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S virtualbox</div><div class="line">sudo pacman -S linux-headers</div><div class="line">sudo usermod -a -G vboxusers $USER</div><div class="line">group $USER</div><div class="line">sudo pacman -S virtualbox-guest-utils</div><div class="line">sudo /sbin/rcvboxdrv setup</div></pre></td></tr></table></figure></p>
+<p>4.无法打开genymotion<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm libxcb.so.1 libdrm.so.2</div></pre></td></tr></table></figure></p>
 <h2 id="搭建Hexo博客"><a href="#搭建Hexo博客" class="headerlink" title="搭建Hexo博客"></a>搭建Hexo博客</h2><p>1.安装nvm（Node Version Manager）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash</div></pre></td></tr></table></figure>
 <p>之后重新打开终端</p>
 <p>2.安装nodejs和npm</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm stable</div></pre></td></tr></table></figure>
 <p>3.安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<h2 id="安装Chromium-Flash-Plugin"><a href="#安装Chromium-Flash-Plugin" class="headerlink" title="安装Chromium Flash Plugin"></a>安装Chromium Flash Plugin</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S pepper-flash</div></pre></td></tr></table></figure>
+<h2 id="安装Chromium-Flash-Plugin"><a href="#安装Chromium-Flash-Plugin" class="headerlink" title="安装Chromium Flash Plugin"></a>安装Chromium Flash Plugin</h2><p>sudo pacman -S pepper-flash```</p>
 <p>参考链接：<a href="http://www.cnblogs.com/vanwoos/p/5470604.html" target="_blank" rel="external">http://www.cnblogs.com/vanwoos/p/5470604.html</a></p>
 
         </div>
@@ -226,7 +227,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-18T06:35:50.119Z" itemprop="dateUpdated">2017年3月18日 14:35</time>
+    最后更新时间：<time datetime="2017-03-18T06:54:47.699Z" itemprop="dateUpdated">2017年3月18日 14:54</time>
 </span><br>
 
 
