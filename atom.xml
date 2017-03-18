@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.github.io/"/>
-  <updated>2017-03-18T06:23:16.282Z</updated>
+  <updated>2017-03-18T06:26:37.032Z</updated>
   <id>https://51simple.github.io/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Manjaro安装配置KDE桌面</title>
-    <link href="https://51simple.github.io/Linux/Manjaro-install-hexo.html"/>
-    <id>https://51simple.github.io/Linux/Manjaro-install-hexo.html</id>
+    <link href="https://51simple.github.io/Linux/manjaro%20configure%20kde%20desktop.html"/>
+    <id>https://51simple.github.io/Linux/manjaro configure kde desktop.html</id>
     <published>2017-03-17T13:03:00.000Z</published>
-    <updated>2017-03-18T06:23:16.282Z</updated>
+    <updated>2017-03-18T06:26:37.032Z</updated>
     
     <content type="html"><![CDATA[<h2 id="系统更新与升级"><a href="#系统更新与升级" class="headerlink" title="系统更新与升级"></a>系统更新与升级</h2><p>1.排列源：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman-mirrors -g</div></pre></td></tr></table></figure></p>
 <p>2.然后同步：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman-optimize&amp;&amp; sync</div></pre></td></tr></table></figure></p>
