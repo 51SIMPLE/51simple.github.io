@@ -28,7 +28,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
 <meta property="og:site_name" content="51SIMPLE">
 <meta property="og:description" content="To solve this problem, we can just redirect the reference to local source.
 On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/options/,  and the docs are here:~/Android/sdk/do">
-<meta property="og:updated_time" content="2017-03-19T05:07:08.112Z">
+<meta property="og:updated_time" content="2017-03-19T05:08:20.106Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Solve AS Fetching Documentation....">
 <meta name="twitter:description" content="To solve this problem, we can just redirect the reference to local source.
@@ -192,17 +192,20 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
             <p>To solve this problem, we can just redirect the reference to local source.</p>
 <p>On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/options/,  and the docs are here:<br>~/Android/sdk/docs/,  or the  custom path of your Android SDK.</p>
 <p>In <code>jdk.table.xml</code>, find all the lines:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;root type=&quot;simple&quot; url=&quot;http://developer.android.com/reference/&quot;&gt;</div></pre></td></tr></table></figure>
-<p>and modify them to<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;root type=&quot;simple&quot; url=&quot;file://$USER_HOME$/programs/Sdk/docs/reference/&quot; /&gt;</div></pre></td></tr></table></figure></p>
-<p>Then, <code>in File -&gt; Invalidate Caches / Restart...</code> select Invalidate, and retry using Quick Documentation. It should display instantly. If it doesn’t, select Invalidate and Restart, and you should be good to go.</p>
+<root type="simple" url="http://developer.android.com/reference/">
 
+<p>and modify them to</p>
+<root type="simple" url="file://$USER_HOME$/programs/Sdk/docs/reference/">
+
+<p>Then, <code>in File -&gt; Invalidate Caches / Restart...</code> select Invalidate, and retry using Quick Documentation. It should display instantly. If it doesn’t, select Invalidate and Restart, and you should be good to go.</p>
+</root></root>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-19T05:07:08.112Z" itemprop="dateUpdated">2017年3月19日 13:07</time>
+    最后更新时间：<time datetime="2017-03-19T05:08:20.106Z" itemprop="dateUpdated">2017年3月19日 13:08</time>
 </span><br>
 
 
