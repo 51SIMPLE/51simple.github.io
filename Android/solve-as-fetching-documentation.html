@@ -13,7 +13,7 @@
     
     
     
-    <title>Solve Fetching Documentation....md | 51SIMPLE | 崇尚简约，追求够用</title>
+    <title>Solve AS Fetching Documentation.... | 51SIMPLE | 崇尚简约，追求够用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -23,14 +23,14 @@
     <meta name="description" content="To solve this problem, we can just redirect the reference to local source.
 On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/options/,  and the docs are here:~/Android/sdk/do">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Solve Fetching Documentation....md">
+<meta property="og:title" content="Solve AS Fetching Documentation....">
 <meta property="og:url" content="https://51simple.github.io/Android/solve-as-fetching-documentation.html">
 <meta property="og:site_name" content="51SIMPLE">
 <meta property="og:description" content="To solve this problem, we can just redirect the reference to local source.
 On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/options/,  and the docs are here:~/Android/sdk/do">
-<meta property="og:updated_time" content="2017-03-19T05:00:12.921Z">
+<meta property="og:updated_time" content="2017-03-19T05:07:08.112Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Solve Fetching Documentation....md">
+<meta name="twitter:title" content="Solve AS Fetching Documentation....">
 <meta name="twitter:description" content="To solve this problem, we can just redirect the reference to local source.
 On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/options/,  and the docs are here:~/Android/sdk/do">
     
@@ -123,7 +123,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Solve Fetching Documentation....md</div>
+        <div class="flex-col header-title ellipsis">Solve AS Fetching Documentation....</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -145,7 +145,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Solve Fetching Documentation....md</h1>
+        <h1 class="title">Solve AS Fetching Documentation....</h1>
         <h5 class="subtitle">
             
                 <time datetime="2017-03-19T04:51:23.000Z" itemprop="datePublished" class="page-time">
@@ -170,7 +170,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Solve Fetching Documentation....md</h1>
+        <h1 class="post-card-title">Solve AS Fetching Documentation....</h1>
         <div class="post-meta">
             <time class="post-time" title="2017年03月19日 12:51" datetime="2017-03-19T04:51:23.000Z"  itemprop="datePublished">2017-03-19</time>
 
@@ -191,21 +191,18 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
         <div class="post-content" id="post-content" itemprop="postContent">
             <p>To solve this problem, we can just redirect the reference to local source.</p>
 <p>On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/options/,  and the docs are here:<br>~/Android/sdk/docs/,  or the  custom path of your Android SDK.</p>
-<p>In jdk.table.xml, find all the lines:</p>
-<root type="simple" url="http://developer.android.com/reference/">
+<p>In <code>jdk.table.xml</code>, find all the lines:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;root type=&quot;simple&quot; url=&quot;http://developer.android.com/reference/&quot;&gt;</div></pre></td></tr></table></figure>
+<p>and modify them to<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;root type=&quot;simple&quot; url=&quot;file://$USER_HOME$/programs/Sdk/docs/reference/&quot; /&gt;</div></pre></td></tr></table></figure></p>
+<p>Then, <code>in File -&gt; Invalidate Caches / Restart...</code> select Invalidate, and retry using Quick Documentation. It should display instantly. If it doesn’t, select Invalidate and Restart, and you should be good to go.</p>
 
-<p>and modify them to</p>
-<root type="simple" url="file://$USER_HOME$/programs/Sdk/docs/reference/">
-
-<p>Then, in File -&gt; Invalidate Caches / Restart… select Invalidate, and retry using Quick Documentation. It should display instantly. If it doesn’t, select Invalidate and Restart, and you should be good to go.</p>
-</root></root>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-03-19T05:00:12.921Z" itemprop="dateUpdated">2017年3月19日 13:00</time>
+    最后更新时间：<time datetime="2017-03-19T05:07:08.112Z" itemprop="dateUpdated">2017年3月19日 13:07</time>
 </span><br>
 
 
@@ -238,7 +235,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve Fetching Documentation....md》 — 51SIMPLE&pic=https://51simple.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve AS Fetching Documentation....》 — 51SIMPLE&pic=https://51simple.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -248,7 +245,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve Fetching Documentation....md》 — 51SIMPLE&source=崇尚简约，追求够用" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve AS Fetching Documentation....》 — 51SIMPLE&source=崇尚简约，追求够用" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -258,7 +255,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Solve Fetching Documentation....md》 — 51SIMPLE&url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&via=https://51simple.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Solve AS Fetching Documentation....》 — 51SIMPLE&url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&via=https://51simple.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -301,7 +298,7 @@ On Linux, the config file jdk.table.xml is under ~/.AndroidStudio2.3/config/opti
     
 
 <div class="comments" id="comments">
-    <div class="ds-thread" data-thread-key="solve-as-fetching-documentation" data-title="Solve Fetching Documentation....md" data-url="https://51simple.github.io/Android/solve-as-fetching-documentation.html"></div>
+    <div class="ds-thread" data-thread-key="solve-as-fetching-documentation" data-title="Solve AS Fetching Documentation...." data-url="https://51simple.github.io/Android/solve-as-fetching-documentation.html"></div>
 </div>
 <script>
 lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
@@ -383,7 +380,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.10');
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve Fetching Documentation....md》 — 51SIMPLE&pic=https://51simple.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve AS Fetching Documentation....》 — 51SIMPLE&pic=https://51simple.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -393,7 +390,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.10');
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve Fetching Documentation....md》 — 51SIMPLE&source=崇尚简约，追求够用" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&title=《Solve AS Fetching Documentation....》 — 51SIMPLE&source=崇尚简约，追求够用" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -403,7 +400,7 @@ lazyScripts.push('/js/embed.min.js?v=1.4.10');
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Solve Fetching Documentation....md》 — 51SIMPLE&url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&via=https://51simple.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Solve AS Fetching Documentation....》 — 51SIMPLE&url=https://51simple.github.io/Android/solve-as-fetching-documentation.html&via=https://51simple.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
