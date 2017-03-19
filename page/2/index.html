@@ -158,6 +158,58 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-java-judge-leapyear"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017年02月10日 17:12" datetime="2017-02-10T09:12:33.000Z"  itemprop="datePublished">2017-02-10</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a></li></ul>
+
+
+
+        
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/Java/java-judge-leapyear.html">java判别闰年</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：
+① 普通年，能被4整除，且不能被100整除;② 世纪年，能被100整除。
+Java判别方法：
+public class LeapYear &#123;	public static void main(String[] args) &#123;		int year = Integer.parseInt(args[0]);		...
+    
+
+        <a href="/Java/java-judge-leapyear.html" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闰年/">闰年</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-how-to-kick-people-out-of-your-network"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -363,57 +415,6 @@ sudo cp winewrapper.exe.so /opt/cxoffice/l...
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-youtubedl-usage"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017年02月06日 21:07" datetime="2017-02-06T13:07:20.000Z"  itemprop="datePublished">2017-02-06</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
-
-
-
-        
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/Linux/youtubedl-usage.html">youtube-dl - 视频下载利器</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        安装（linux）sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dlsudo chmod a+rx /usr/local/bin/youtube-dl
-下载视频youtubedl url-of-video-playing  
-相当简单，得到视频播放页的 url 即可，并...
-    
-
-        <a href="/Linux/youtubedl-usage.html" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/youtube-dl/">youtube-dl</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
             <article id="post-linux-thunder-convert-to-ed2k"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -578,14 +579,14 @@ nano ~/workspa...
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-win10-remove-shoutcut-arrow"
+            <article id="post-linux-remove-sudo-password"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017年02月05日 8:54" datetime="2017-02-05T00:54:00.000Z"  itemprop="datePublished">2017-02-05</time>
+        <time class="post-time" title="2017年02月05日 0:41" datetime="2017-02-04T16:41:00.000Z"  itemprop="datePublished">2017-02-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Windows/">Windows</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
 
 
 
@@ -598,7 +599,7 @@ nano ~/workspa...
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/Windows/win10-remove-shoutcut-arrow.html">win10去除桌面快捷方式小箭头</a>
+      <a class="post-title-link" href="/Linux/linux-remove-sudo-password.html">linux去除烦人的sudo密码</a>
     </h3>
   
 
@@ -608,18 +609,23 @@ nano ~/workspa...
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        在桌面新建一个文本文档，重命名为 clearArrow.bat，再编辑写入以下内容：
-reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,19...
+        执行 sudo 命令需要频繁输入密码，虽说更安全，但也挺烦人的，我选择去除它。
+打开终端，执行 sudo visudo，找到这一行：
+%sudo  ALL=(ALL:ALL) ALL
+在行首添加 #，即注释掉此行，再往下添加一行：
+%sudo ALL=NOPASSWD:ALL
+保存修改之后，以后执行 sudo 命令就畅通无阻了。
+
     
 
-        <a href="/Windows/win10-remove-shoutcut-arrow.html" class="post-more waves-effect waves-button">
+        <a href="/Linux/linux-remove-sudo-password.html" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/快捷方式/">快捷方式</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sudo密码/">sudo密码</a></li></ul>
 
     </div>
     
@@ -628,14 +634,14 @@ reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-potplayer-green-version"
+            <article id="post-baidupcs"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017年02月05日 0:44" datetime="2017-02-04T16:44:00.000Z"  itemprop="datePublished">2017-02-05</time>
+        <time class="post-time" title="2017年02月04日 17:22" datetime="2017-02-04T09:22:00.000Z"  itemprop="datePublished">2017-02-04</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Windows/">Windows</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Tutorial/">Tutorial</a></li></ul>
 
 
 
@@ -648,7 +654,7 @@ reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/Windows/potplayer-green-version.html">potplayer 免安装绿色版</a>
+      <a class="post-title-link" href="/Tutorial/baidupcs.html">baidupcs - 百度网盘命令行工具</a>
     </h3>
   
 
@@ -658,25 +664,17 @@ reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explo
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        
-                
-                    
-                    
-                
-                potplayer
-            
-PotPlayer是 Windows 下非常优秀的一款音视频播放器，支持大多数的文件格式。官网只有安装版，这里提供免安装的版本，点此下载
-下载之后，解压出一个 P...
+        BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于不限速。
     
 
-        <a href="/Windows/potplayer-green-version.html" class="post-more waves-effect waves-button">
+        <a href="/Tutorial/baidupcs.html" class="post-more waves-effect waves-button">
             阅读全文...
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/免安装/">免安装</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/百度云不限速/">百度云不限速</a></li></ul>
 
     </div>
     
