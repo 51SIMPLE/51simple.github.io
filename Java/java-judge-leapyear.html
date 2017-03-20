@@ -32,7 +32,7 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
 ① 普通年，能被4整除，且不能被100整除;② 世纪年，能被100整除。
 Java判别方法：
 public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#123;		int year = Integer.parseInt(args[0]);		boo">
-<meta property="og:updated_time" content="2017-02-11T04:30:10.000Z">
+<meta property="og:updated_time" content="2017-03-20T15:01:20.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java判别闰年">
 <meta name="twitter:description" content="判别方法：四年一闰，百年不闰，四百年再闰。通俗来讲，闰年的两种情况：
@@ -199,6 +199,8 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
 <p>① 普通年，能被4整除，且不能被100整除;<br>② 世纪年，能被100整除。</p>
 <p>Java判别方法：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LeapYear</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="keyword">int</span> year = Integer.parseInt(args[<span class="number">0</span>]);</div><div class="line">		<span class="keyword">boolean</span> isLeapYear;</div><div class="line">		isLeapYear = (year % <span class="number">4</span> == <span class="number">0</span>) &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span>) || (year % <span class="number">100</span> ==<span class="number">0</span>);</div><div class="line">		System.out.println(isLeapYear);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>扩展：判断1900～2000年, 打印出哪些是闰年。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span> <span class="comment">// 引用头文件</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> y = <span class="number">1900</span>;</div><div class="line">	<span class="keyword">while</span> (y &lt; <span class="number">2001</span>)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">if</span> ((y % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; y % <span class="number">100</span> != <span class="number">0</span>) || y % <span class="number">400</span> == <span class="number">0</span>)</div><div class="line">			<span class="built_in">printf</span>(<span class="string">"%d是闰年\n"</span>, y);</div><div class="line">		y++;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
         </div>
 
@@ -206,7 +208,7 @@ public class LeapYear &amp;#123;	public static void main(String[] args) &amp;#12
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-02-11T04:30:10.000Z" itemprop="dateUpdated">2017年2月11日 12:30</time>
+    最后更新时间：<time datetime="2017-03-20T15:01:20.855Z" itemprop="dateUpdated">2017年3月20日 23:01</time>
 </span><br>
 
 
