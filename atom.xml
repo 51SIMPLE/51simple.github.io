@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://51simple.github.io/"/>
-  <updated>2017-03-19T05:08:20.106Z</updated>
+  <updated>2017-03-21T11:42:14.020Z</updated>
   <id>https://51simple.github.io/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下Sublime Text 3配置Java编译环境</title>
+    <link href="https://51simple.github.io/Linux/linux-sublime-text-3-configure-java-compiler.html"/>
+    <id>https://51simple.github.io/Linux/linux-sublime-text-3-configure-java-compiler.html</id>
+    <published>2017-03-21T11:35:26.000Z</published>
+    <updated>2017-03-21T11:42:14.020Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Jdk的bin目录下新建 runJava.sh:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /usr/lib/jvm/jdk1.8.0_121/bin/runJava.sh</div></pre></td></tr></table></figure></p>
+<p>写入以下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div><div class="line">[ -f &quot;$1.class&quot; ] &amp;&amp; rm $1.class</div><div class="line">for file in $1</div><div class="line">do</div><div class="line">  echo &quot;-Compiling $file.java ...&quot;</div><div class="line">  javac $file.java</div><div class="line">done</div><div class="line"></div><div class="line"></div><div class="line">if [ -f &quot;$1.class&quot; ]</div><div class="line">then</div><div class="line">  echo &quot;------Output------&quot;</div><div class="line">  java $1</div><div class="line">else</div><div class="line">  echo &quot; &quot;</div><div class="line">fi</div></pre></td></tr></table></figure></p>
+<p>设定权限：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod 777 runJava.sh</div></pre></td></tr></table></figure></p>
+<p>编辑 /opt/sublime_text_3/Packages/Java.sublime-package，不用解压，打开其中的 JavaC.sublime-build：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	&quot;shell_cmd&quot;: &quot;javac \&quot;$file\&quot;&quot;,</div><div class="line">	&quot;file_regex&quot;: &quot;^(...*?):([0-9]*):?([0-9]*)&quot;,</div><div class="line">	&quot;selector&quot;: &quot;source.java&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>将第一行改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;shell_cmd&quot;: &quot;runJava.sh \&quot;$file_base_name\&quot;&quot;，</div></pre></td></tr></table></figure></p>
+<p>最后，在sublime中按 Ctrl+b， 执行编译并运行。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在Jdk的bin目录下新建 runJava.sh:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td c
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://51simple.github.io/categories/Linux/"/>
+    
+    
+      <category term="sublime text 3" scheme="https://51simple.github.io/tags/sublime-text-3/"/>
+    
+  </entry>
   
   <entry>
     <title>Solve AS Fetching Documentation....</title>
@@ -689,35 +717,6 @@
     
     
       <category term="sudo密码" scheme="https://51simple.github.io/tags/sudo%E5%AF%86%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>baidupcs - 百度网盘命令行工具</title>
-    <link href="https://51simple.github.io/Tutorial/baidupcs.html"/>
-    <id>https://51simple.github.io/Tutorial/baidupcs.html</id>
-    <published>2017-02-04T09:22:00.000Z</published>
-    <updated>2017-02-09T14:42:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于<code>不限速</code>。</p>
-<a id="more"></a>
-<p>简单介绍一下windows下的使用方法：</p>
-<p>1、下载 <a href="http://pan.baidu.com/s/1miFe1r6" target="_blank" rel="external">pcs.exe</a>，并移到到个人用户目录下（如 C:\用户\Simple）<br>2、按Win+r快捷键，输入cmd回车，即可打开命令窗口<br>3、执行 <code>pcs set --max_thread=3</code>设置最大下载线程数<br>4、执行 <code>pcs login --username=gang --password=&quot;password&quot;</code> ，对应自己的帐号密码进行登陆<br>5、之后就是一些操作文件的命令，详情见作者<a href="https://github.com/GangZhuo/BaiduPCS/blob/master/README.md#命令列表&quot;" target="_blank" rel="external">github主页</a></p>
-<blockquote>
-<p>提示：把 pcs.exe 所在目录加入到系统的环境变量（Path）中会更方便，这样不管当前目录是什么，都能使用 pcs 命令。</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;BaiduPCS 是一个多线程下载或上传百度网盘的命令行工具，可以在 linux终端 中使用。当然也支持Windows, Mac平台，关键在于&lt;code&gt;不限速&lt;/code&gt;。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Tutorial" scheme="https://51simple.github.io/categories/Tutorial/"/>
-    
-    
-      <category term="百度云不限速" scheme="https://51simple.github.io/tags/%E7%99%BE%E5%BA%A6%E4%BA%91%E4%B8%8D%E9%99%90%E9%80%9F/"/>
     
   </entry>
   

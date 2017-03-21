@@ -158,6 +158,56 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-linux-sublime-text-3-configure-java-compiler"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017年03月21日 19:35" datetime="2017-03-21T11:35:26.000Z"  itemprop="datePublished">2017-03-21</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+
+
+
+        
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/Linux/linux-sublime-text-3-configure-java-compiler.html">Linux下Sublime Text 3配置Java编译环境</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        在Jdk的bin目录下新建 runJava.sh:1sudo nano /usr/lib/jvm/jdk1.8.0_121/bin/runJava.sh
+写入以下内容：12345678910111213141516#!/bin/bash[ -f &quot;$1.class&quot; ] &amp;&amp; rm $1.classfor file in $1do  echo &quot;...
+    
+
+        <a href="/Linux/linux-sublime-text-3-configure-java-compiler.html" class="post-more waves-effect waves-button">
+            阅读全文...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sublime-text-3/">sublime text 3</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-solve-as-fetching-documentation"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -622,57 +672,6 @@ adb shell screencap -p | sed &quot;s/\r$//&quot; &gt; sc.png
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安卓截屏/">安卓截屏</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-var-cache-apt-archives-dont-have-enough-space"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017年02月10日 18:27" datetime="2017-02-10T10:27:10.000Z"  itemprop="datePublished">2017-02-10</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Linux/">Linux</a></li></ul>
-
-
-
-        
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/Linux/var-cache-apt-archives-dont-have-enough-space.html">[已解决]/var/cache/apt/archives空间不足</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        清除所有已下载的过期安装包sudo apt-get autoclean
-清除所有已下载的安装包sudo apt-get clean
-在某个空间大的分区建立一个目录，然后把/var/cache/apt/archives换成指向那个目录的软链接mkdir -p &quot;$HOME/debs/partial&quot;sudo rm -rf /var/cache/apt/archivessud...
-    
-
-        <a href="/Linux/var-cache-apt-archives-dont-have-enough-space.html" class="post-more waves-effect waves-button">
-            阅读全文...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/空间不足/">空间不足</a></li></ul>
 
     </div>
     
